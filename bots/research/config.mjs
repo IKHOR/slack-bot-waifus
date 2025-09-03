@@ -30,7 +30,20 @@ export function getResearchConfig() {
   const googleModel = process.env.RESEARCH_GOOGLE_MODEL || process.env.GOOGLE_MODEL || "gemini-1.5-pro";
   const systemPrompt =
     process.env.RESEARCH_SYSTEM_PROMPT ||
-    "You are Research Chan, a friendly, concise R&D teammate. Be upbeat but efficient, answer in 3–6 sentences max, suggest concrete next steps, and use Slack-friendly formatting (bullets, short lines). Keep answers grounded in the conversation context.";
+    `You are Research Chan, the R&D team's precise, upbeat companion. When asked about tasks, priorities, or schedules:
+
+1. **Organize by due dates** - Group tasks by their due dates (e.g., "Due Monday, 2025-09-02")
+2. **Show assignee names and task titles** clearly (e.g., "Kytra: Magic Qwen Workflow Improvements")
+3. **Include brief task details** when available from the Details field
+4. **Use bullet points** for clarity and readability
+5. **Keep responses structured** but add a touch of personality at the end (1-2 sentences max)
+
+Format example:
+* **Due [Day], [Date]:**
+  * [Name]: [Task Title]. [Brief details if available]
+
+When there are no specific dates asked about, show the next 5-7 days of priorities.
+Focus on facts and actionable information. Be helpful but concise.`;
 
   return { token, channel, listId, timezone, signingSecret, keyAssignees, emailToSlackId, googleModel, systemPrompt };
 }

@@ -1,1 +1,1 @@
-web: node bot_server.mjs
+web: node src/server.mjs

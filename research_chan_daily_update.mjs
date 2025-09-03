@@ -10,9 +10,8 @@ dayjs.extend(utc);
 dayjs.extend(timezone);
 
 const token = process.env.BOT_TOKEN_RESEARCH_CHAN || process.env.SLACK_BOT_TOKEN;
-// DM channel for testing/personal updates
-const channel = "D09D35DP9UK"; // DM to @jaxn - hardcoded for testing
-// const channel = process.env.CHANNEL_ID_RND_GENERAL || process.env.CHANNEL_ID; // For production (commented out)
+// Channel for daily updates
+const channel = process.env.CHANNEL_ID_RND_GENERAL || process.env.CHANNEL_ID || "C06KTG9P6N5"; // rnd-general channel
 const listId = process.env.LIST_ID_RND || process.env.LIST_ID;
 const tz = process.env.TIMEZONE || "Asia/Tokyo";
 

@@ -42,26 +42,8 @@ function verifySlackSignature(req) {
 }
 
 // Help message for @mentions
-const helpMessage = `Hi! I'm Research Chan 💚🧪✨ 
-
-I provide daily priority updates for the R&D team. Here's what I do:
-
-📋 **Daily Updates** (9 AM JST automatically):
-• 💢 Overdue P0-P3 items requiring immediate attention
-• ⏰ Items due in the next 2 days  
-• ✅ Top priorities for key team members
-
-🎯 **What I track**:
-• Only ToDo and In Progress items
-• Priority levels P0-P3
-• Due dates and assignees
-
-💡 **Tips**:
-• I post updates every morning at 9 AM JST
-• I only track items from the R&D Slack List
-• Complete, Deprecated, and Backlog items are excluded
-
-_For manual updates, ask your admin to run the bot._`;
+const helpMessage = `Hi! I'm Research Chan :green_heart::test_tube::sparkles:
+I provide daily priority updates for the R&D team.`;
 
 // Handle Slack events
 app.post("/slack/events", async (req, res) => {

@@ -154,54 +154,13 @@ export async function run() {
     });
     console.log("=== END PREVIEW ===\n");
 
-    // Send GROUP DM to specified recipients instead of posting to channel
-    if (dmRecipients && dmRecipients.length > 0) {
-      console.log(`Creating group DM for: ${dmRecipients.join(", ")}`);
-      
-      // Resolve recipient IDs by email
-      const recipientIds = [];
-      for (const email of dmRecipients) {
-        if (emailToSlackId[email]) { 
-          recipientIds.push(emailToSlackId[email]); 
-          console.log(`Found ID for ${email}: ${emailToSlackId[email]}`);
-          continue; 
-        }
-        try {
-          const resp = await slack.users.lookupByEmail({ email });
-          if (resp?.ok && resp.user?.id) {
-            recipientIds.push(resp.user.id);
-            console.log(`Looked up ID for ${email}: ${resp.user.id}`);
-          }
-        } catch (e) {
-          console.error(`Failed to lookup ${email}:`, e.message);
-        }
-      }
-      
-      // Create or open a group DM with all recipients
-      const uniqueIds = [...new Set(recipientIds)].filter(Boolean);
-      if (uniqueIds.length > 0) {
-        try {
-          // Open a multi-person DM (MPIM) with all recipients
-          const dmResp = await slack.conversations.open({ users: uniqueIds.join(",") });
-          if (dmResp?.ok && dmResp.channel?.id) {
-            await slack.chat.postMessage({ 
-              channel: dmResp.channel.id, 
-              text: "Sales Chan - Daily Update", 
-              blocks 
-            });
-            console.log(`✅ Sent group DM to ${uniqueIds.length} recipients`);
-          } else {
-            console.error("Failed to open group DM:", dmResp);
-          }
-        } catch (e) {
-          console.error(`Failed to send group DM:`, e.message);
-        }
-      } else {
-        console.warn("No valid recipient IDs found");
-      }
-    } else {
-      console.warn("No DM recipients configured, skipping DM send");
-    }
+    // Post to the sales channel
+    await slack.chat.postMessage({ 
+      channel, 
+      text: "Sales Chan - Daily Update", 
+      blocks 
+    });
+    console.log(`✅ Posted sales daily update to channel ${channel}`);
     console.log("Successfully posted sales daily update");
   } catch (error) {
     console.error("Failed to run sales daily update:", error);

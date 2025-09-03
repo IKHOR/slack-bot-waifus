@@ -1,0 +1,32 @@
+name: Sales Chan Daily Update
+
+on:
+  schedule:
+    # Runs at 23:00 UTC (8:00 AM JST) Monday-Friday
+    - cron: '0 23 * * 0-4'  # UTC Sunday-Thursday = JST Monday-Friday
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  sales-daily-update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Run Sales Chan daily update
+      env:
+        SALES_BOT_TOKEN: ${{ secrets.SALES_BOT_TOKEN }}
+        SALES_CHANNEL_ID: ${{ secrets.SALES_CHANNEL_ID }}
+        SALES_LIST_ID: ${{ secrets.SALES_LIST_ID }}
+        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        GOOGLE_MODEL: ${{ secrets.GOOGLE_MODEL }}
+        TIMEZONE: Asia/Tokyo
+      run: npm run bot:sales:update

@@ -1,0 +1,30 @@
+name: Research Chan Daily Update
+
+on:
+  schedule:
+    # Runs at 00:00 UTC (9:00 AM JST) every day
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  daily-update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Run daily update
+      env:
+        BOT_TOKEN_RESEARCH_CHAN: ${{ secrets.BOT_TOKEN_RESEARCH_CHAN }}
+        CHANNEL_ID_RND_GENERAL: ${{ secrets.CHANNEL_ID_RND_GENERAL }}
+        LIST_ID_RND: ${{ secrets.LIST_ID_RND }}
+        TIMEZONE: Asia/Tokyo
+      run: npm run daily-update

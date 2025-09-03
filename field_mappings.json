@@ -1,0 +1,141 @@
+{
+  "description": "Field mappings for Slack Lists integration used by research_chan_daily_update.mjs",
+  "list_id": "F092JNX3RL7",
+  "team_id": "T06K7221F6C",
+  "fields": {
+    "priority": {
+      "column_id": "Col08V4T02P5Y",
+      "type": "dropdown",
+      "description": "Priority level dropdown field",
+      "option_mappings": {
+        "Opt0183CXDH": "P0",
+        "Opt4GBWBKZB": "P1",
+        "OptGESIX7LE": "P2",
+        "Opt24AKKH4V": "P3"
+      }
+    },
+    "status": {
+      "column_id": "Col093T8A25LG",
+      "type": "dropdown",
+      "description": "Status/bucket field for task state",
+      "option_mappings": {
+        "Opt2AUH34OG": "ToDo",
+        "Opt62NHHN5C": "ToDo",
+        "OptHSJVP60E": "In Progress",
+        "OptHX1KN4IP": "Deprecated",
+        "OptZHYHCA4A": "Backlog",
+        "Opt38B8RWRR": "Complete"
+      },
+      "included_in_digest": ["ToDo", "In Progress"],
+      "excluded_from_digest": ["Complete", "Deprecated", "Backlog", "Unknown"]
+    },
+    "assignee": {
+      "column_id": "todo_assignee",
+      "type": "user",
+      "description": "The person assigned to complete the task",
+      "note": "This is a semantic field key, not an encoded column ID"
+    },
+    "requester": {
+      "column_id": "Col08UWN5NX6F",
+      "type": "user",
+      "description": "The person who requested/created the task",
+      "note": "Should NOT be used for @mentions in digest"
+    },
+    "due_date": {
+      "column_id": "todo_due_date",
+      "type": "date",
+      "description": "Due date for the task",
+      "format": "YYYY-MM-DD",
+      "note": "This is a semantic field key, not an encoded column ID"
+    },
+    "completed": {
+      "column_id": "todo_completed",
+      "type": "checkbox",
+      "description": "Checkbox indicating if task is complete",
+      "note": "DEPRECATED - Use status field instead for determining completion"
+    },
+    "title": {
+      "column_id": "name",
+      "type": "text",
+      "description": "Task title/name",
+      "note": "This is a semantic field key"
+    },
+    "department": {
+      "column_id": "Col08UPMUKQF9",
+      "type": "dropdown",
+      "description": "Department or team assignment",
+      "option_mappings": {
+        "OptWTM31877": "Skunkworks",
+        "Opt2V8EO9ZS": "Unknown",
+        "OptAI9TJ6P3": "Unknown"
+      },
+      "note": "Not currently used in digest"
+    },
+    "description": {
+      "column_id": "Col08V5C24K1S",
+      "type": "rich_text",
+      "description": "Additional notes and task description",
+      "note": "Not currently displayed in digest"
+    },
+    "unknown_field_1": {
+      "column_id": "Col093E6CHSLT",
+      "type": "dropdown",
+      "description": "Unknown field - all items have same value",
+      "common_value": "OptB1E92FD3",
+      "note": "Purpose unknown, not used in digest"
+    },
+    "created_timestamp": {
+      "column_id": "Col095MCLKZL0",
+      "type": "timestamp",
+      "description": "When the item was created",
+      "note": "Not currently used in digest"
+    }
+  },
+  "user_mappings": {
+    "description": "Email to Slack User ID mappings",
+    "mappings": {
+      "kytra@ikhor.ai": "U06K8F0F1RC",
+      "ryo@ikhor.ai": "U09BTLXG89G",
+      "joao@ikhor.ai": "U06L088EW7K",
+      "kijai@ikhor.ai": "U0798RS2ESX",
+      "jackson@ikhor.ai": "U06KJLR4GBF",
+      "jaxn@ikhor.ai": "U06KJLR4GBF",
+      "todd@ikhor.ai": "U079Z6D4YFJ",
+      "kush@ikhor.ai": "U07584FHQMN"
+    }
+  },
+  "digest_rules": {
+    "included_priorities": ["P0", "P1", "P2", "P3"],
+    "excluded_priorities": ["P4", "None"],
+    "included_statuses": ["ToDo", "In Progress"],
+    "excluded_statuses": ["Complete", "Deprecated", "Backlog", "Unknown"],
+    "key_assignees": ["kytra@ikhor.ai", "ryo@ikhor.ai", "joao@ikhor.ai"],
+    "overdue_threshold": "Items with due date before today",
+    "urgent_threshold": "Items due within 2 days (today or tomorrow)"
+  },
+  "discovery_process": {
+    "description": "How these mappings were discovered",
+    "steps": [
+      "1. Export raw data using slackLists.items.list API call",
+      "2. Save response to debug-list-full.json",
+      "3. Cross-reference known item values from CSV export",
+      "4. Analyze field consistency across 50+ items",
+      "5. Identify 1:1 mappings between option IDs and values",
+      "6. Verify mappings against CSV data for accuracy"
+    ],
+    "analysis_scripts": [
+      "find-priority-field.mjs",
+      "find-status-field.mjs",
+      "find-correct-status-field.mjs",
+      "find-complete-status-mapping.mjs",
+      "check-assignee-fields.mjs"
+    ]
+  },
+  "notes": [
+    "Column IDs starting with 'Col' are encoded identifiers specific to this Slack List",
+    "Option IDs starting with 'Opt' are dropdown values specific to each field",
+    "Semantic field keys like 'todo_assignee' and 'todo_due_date' are standard across Slack Lists",
+    "The todo_completed checkbox should NOT be used - rely on status dropdown instead",
+    "Some status options may map to multiple actual statuses - use most common mapping"
+  ]
+}

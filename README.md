@@ -46,6 +46,20 @@ No items left To Do
 // this should always @kytra as she gives a daily goal
 ```
 
+```
+📞💓♠️ Sales Chan - Daily Update ♠️💓📞
+
+// if there are overdue items, if not, don't include this section
+💢 OVERDUE ITEMS REQUIRING IMMEDIATE ATTENTION 💢
+• ❤️ @user [Task Name with link] | [priority]
+
+// if there are soon due items (due today or tomorrow), if not, don't include this section
+⏰ Items Due Soon (Next 2 Days) 
+• 🧡 @user [Task Name with link] | [priority]
+• 🧡 @user [Task Name with link] | [priority]
+```
+
+
 ## Field Mapping Guide for Slack Lists Integration
 
 When setting up new bots that integrate with Slack Lists, you'll need to correctly identify and map field IDs. Slack Lists uses encoded column IDs (e.g., `Col08V4T02P5Y`) and option IDs (e.g., `Opt0183CXDH`) that need to be discovered through data analysis.
@@ -199,10 +213,10 @@ npm install
 
 2. Configure environment variables in `.env`:
 ```env
-BOT_TOKEN_RESEARCH_CHAN=xoxb-your-bot-token
-SLACK_SIGNING_SECRET=your-signing-secret
-CHANNEL_ID_RND_GENERAL=C0123456789
-LIST_ID_RND=F0123456789
+RESEARCH_BOT_TOKEN=xoxb-your-bot-token
+RESEARCH_SIGNING_SECRET=your-signing-secret
+RESEARCH_CHANNEL_ID=C0123456789
+RESEARCH_LIST_ID=F0123456789
 TIMEZONE=Asia/Tokyo
 PORT=3000
 ```

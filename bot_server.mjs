@@ -10,8 +10,8 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-const token = process.env.BOT_TOKEN_RESEARCH_CHAN || process.env.SLACK_BOT_TOKEN;
-const signingSecret = process.env.SLACK_SIGNING_SECRET;
+const token = process.env.RESEARCH_BOT_TOKEN;
+const signingSecret = process.env.RESEARCH_SIGNING_SECRET;
 const slack = new WebClient(token);
 
 // Raw body needed for signature verification

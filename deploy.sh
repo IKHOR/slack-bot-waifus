@@ -41,32 +41,19 @@ fi
 if [ -f .env ]; then
     echo "⚙️  Setting environment variables from .env..."
     
-    # Parse .env file and set config vars
+    # Parse .env file and set config vars as-is
     while IFS='=' read -r key value; do
         # Skip comments and empty lines
-        if [[ ! "$key" =~ ^# ]] && [[ -n "$key" ]]; then
-            # Remove quotes from value if present
-            value="${value%\"}"
-            value="${value#\"}"
-            value="${value%\'}"
-            value="${value#\'}"
-            
-            # Map local env names to Heroku names
-            case "$key" in
-                "BOT_TOKEN_RESEARCH_CHAN")
-                    heroku config:set SLACK_BOT_TOKEN="$value" --app $APP_NAME
-                    ;;
-                "CHANNEL_ID_RND_GENERAL")
-                    heroku config:set CHANNEL_ID="$value" --app $APP_NAME
-                    ;;
-                "LIST_ID_RND")
-                    heroku config:set LIST_ID="$value" --app $APP_NAME
-                    ;;
-                "TIMEZONE")
-                    heroku config:set TIMEZONE="$value" --app $APP_NAME
-                    ;;
-            esac
+        if [[ -z "$key" ]] || [[ "$key" =~ ^# ]]; then
+            continue
         fi
+        # Remove quotes from value if present
+        value="${value%\"}"
+        value="${value#\"}"
+        value="${value%\'}"
+        value="${value#\'}"
+        # Set on Heroku with identical key
+        heroku config:set "$key"="$value" --app $APP_NAME
     done < .env
     
     echo "✅ Environment variables configured"

@@ -23,8 +23,8 @@ jobs:
     
     - name: Run daily update
       env:
-        BOT_TOKEN_RESEARCH_CHAN: ${{ secrets.BOT_TOKEN_RESEARCH_CHAN }}
-        CHANNEL_ID_RND_GENERAL: ${{ secrets.CHANNEL_ID_RND_GENERAL }}
-        LIST_ID_RND: ${{ secrets.LIST_ID_RND }}
+        RESEARCH_BOT_TOKEN: ${{ secrets.RESEARCH_BOT_TOKEN }}
+        RESEARCH_CHANNEL_ID: ${{ secrets.RESEARCH_CHANNEL_ID }}
+        RESEARCH_LIST_ID: ${{ secrets.RESEARCH_LIST_ID }}
         TIMEZONE: Asia/Tokyo
       run: npm run daily-update

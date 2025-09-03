@@ -24,6 +24,8 @@ export function getSalesConfig() {
     "todd@ikhor.ai": "U079Z6D4YFJ",
     "kush@ikhor.ai": "U07584FHQMN",
     "jaxn@ikhor.ai": "U06KJLR4GBF",
+    "hilary@ikhor.ai": undefined,
+    "coco@ikhor.ai": undefined,
   };
 
   // LLM & persona
@@ -32,5 +34,12 @@ export function getSalesConfig() {
     process.env.SALES_SYSTEM_PROMPT ||
     "You are Sales Chan, a focused, friendly sales teammate. Be concise and actionable (3–6 lines), prioritize pipeline movement, qualification, and next steps. Use Slack-friendly bullets and keep tone positive and professional.";
 
-  return { token, channel, listId, timezone, signingSecret, keyAssignees, emailToSlackId, googleModel, systemPrompt };
+  // DM recipients: comma-separated emails
+  const dmRecipients = (process.env.SALES_DM_RECIPIENTS ||
+    "jackson@ikhor.ai,todd@ikhor.ai,hilary@ikhor.ai,coco@ikhor.ai")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+
+  return { token, channel, listId, timezone, signingSecret, keyAssignees, emailToSlackId, googleModel, systemPrompt, dmRecipients };
 }

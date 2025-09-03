@@ -1,0 +1,752 @@
+Task,Status,Priority,Description,Assignee,"Due date",Completed,Category,Requester,Message,"Date Added",New,"Created by",Watchers
+"model training guidelines v2.5",Done,,"iterative update to the model training guidelines > iro-trace lines and mix & match scenarios
+• 05/30 - kytra is traveling, so a more detailed, in-depth discussion with her is pushed until she's available. 
+• 06/02 - call scheduled for 23:00 JST today
+• 06/05 - intermediate update by 06/06",shruthi@ikhor.ai,2025-06-07,true,Projects,,,"5/28/25, 1:06 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"build regression test plan",Done,p2,"• to build our “TEMPLATE” for monthly QA regression testing. 
+• basically the test plan minus release specific things we’re testing in this cycle that probably don’t need explicit retests moving forwards.","shruthi@ikhor.ai, akira@ikhor.ai",2025-08-25,false,Projects,,,"7/17/25, 6:46 PM","8/25/25, 8:36 PM",shruthi@ikhor.ai,
+"asahi - prep for meeting",Done,p1,"• meeting set up for 08/08 12PM 
+• setting up schedule with nakamura-san","ko@ikhor.ai, todd@ikhor.ai",2025-08-08,true,Comms,,,"7/18/25, 11:32 AM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"MIXI - in-betweener intro",Done,p1,"send soft follow up with in-betweener intro",shruthi@ikhor.ai,2025-07-21,true,Comms,,,"7/18/25, 11:19 AM","7/22/25, 7:18 PM",shruthi@ikhor.ai,
+"hike - share follow up",Done,p0,"Ko sent follow up on 07/17. waiting response
+08/01 - on hold until we get a response",ko@ikhor.ai,2025-07-30,true,Comms,,,"7/18/25, 11:16 AM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"kadokawa - follow up on MSA",Done,p0,"Satoshi to send follow up if no response",satoshi@ikhor.ai,2025-07-29,true,Comms,,,"7/18/25, 11:11 AM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"Kadokawa - ping Kudo-san",Done,p1,"Ko-san to ping Kudo-san about the tech guy",ko@ikhor.ai,2025-08-07,true,Comms,,,"7/18/25, 11:10 AM","8/7/25, 7:01 PM",shruthi@ikhor.ai,
+"gree - respond to queries",Done,p0,"• questions about magicpen / in-betweener",shruthi@ikhor.ai,2025-07-18,true,Comms,,,"7/18/25, 11:08 AM","7/18/25, 5:17 PM",shruthi@ikhor.ai,
+"hibari - inbtwn follow up",Done,p0,"• send follow up about in-betweener usage
+• remind that the free trial is ending 
+• ask if they still want the training session",akira@ikhor.ai,2025-07-18,true,Comms,,,"7/18/25, 10:31 AM","7/18/25, 5:17 PM",shruthi@ikhor.ai,
+"nakamura-san task list",Done,p0,"Nakamura san projects list with Kush-- beyond Kush, there might actually be data generation, primadonna related things Jackson/Kush might be interested in that could be gathered.
+she may also have a distinct drawing style and can do color (not sure if part of her skill set). so, we could potentially have her create a data set we could train a style model on (line art look & feel, color palette, object set).","shruthi@ikhor.ai, kush@ikhor.ai",2025-07-31,true,Projects,,,"7/17/25, 6:50 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"update char training sheet",Done,p1,"updating of the character training spreadsheet (accurate links to each character), basic timelines.",shruthi@ikhor.ai,2025-07-18,true,Tasks,,,"7/17/25, 6:42 PM","7/18/25, 5:17 PM",shruthi@ikhor.ai,
+"OLM - sakugado convo","In progress",p1,"start conversation about sakugado",ko@ikhor.ai,2025-08-20,false,"Sales Updates",,,"7/18/25, 11:40 AM","8/7/25, 11:09 AM",shruthi@ikhor.ai,
+"78nine - check about BG tool",Done,p2,"• follow up with in-betweener as conversation starter 
+• check with yanagawa san about current interest in BG tool if we can do portrait mode",shruthi@ikhor.ai,2025-07-31,true,Comms,,https://ikhorlabs.slack.com/archives/C081TGSPLHF/p1752723625524749,"7/17/25, 6:41 PM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"OLM digital - inbtwn",Done,p0,"• share the in-betweener onboarding process 
+• also, order form and guidelines ",shruthi@ikhor.ai,2025-07-17,true,Comms,,,"7/16/25, 6:50 PM","7/18/25, 5:17 PM",shruthi@ikhor.ai,
+"born digital - scheduling",Done,p0,"• schedule online demo for born digital 
+• schedule live demo for universal entertaiment",shruthi@ikhor.ai,2025-07-16,true,Comms,,,"7/16/25, 6:34 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Akita Tsumugi - reach out",Done,p0,"_07/25 - no response to follow up_ 
+• share MSA + order form 
+• request for clean up samples 
+• ask for account creation details 
+08/01 - Akira to send soft follow up on seat identification on slack
+
+08/18 Aki sent out MSA and order form for IB seats - waiting for reply
+Offered on-boarding session but waiiting for reply (AKI to follow up)","akira@ikhor.ai, ko@ikhor.ai",2025-08-25,false,Comms,,,"7/16/25, 6:32 PM","8/27/25, 8:49 PM",shruthi@ikhor.ai,
+"gree - magicpen + inbtwn",Done,p0,"• share onboarding process for MP 
+• also share details about in-betweener",shruthi@ikhor.ai,2025-07-16,true,Comms,,,"7/16/25, 6:31 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"NK seminar - check with adam",Done,p1,"• how many cyclic / concurrent accounts needed","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-17,true,Tasks,,,"7/14/25, 6:09 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"nihon kōgakuin - follow up",Done,p0,"• share our equipment requirements for the seminar 
+• what is their set up for the seminar - equipment, space
+• set up a meeting to understand thier set up 
+• Ko to speak with Ueki san ",shruthi@ikhor.ai,2025-07-14,true,Comms,,,"7/11/25, 6:14 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"SqEx - response to Iino san",Done,p2,"• send response to investment related meeting request",shruthi@ikhor.ai,2025-07-14,true,Comms,,,"7/11/25, 6:13 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"imagica light anime - response",Done,p0,"• send response for development costs and investment queries. 
+• set up next meeting","shruthi@ikhor.ai, satoshi@ikhor.ai",2025-07-24,true,Comms,,,"7/11/25, 6:12 PM","7/24/25, 10:39 AM",shruthi@ikhor.ai,
+"square enix - set up meeting",Done,p1,"~investment - led by hilary~
+
+magic pen :
+• waiting on response, follow up on 07/21
+co-development project :
+• set up meeting about sketch to mesh 
+• waiting on response from yurie after internal meeting with their AI lead, to discuss what the scope of collaboration is 
+• note : better to have an interpreter present","shruthi@ikhor.ai, todd@ikhor.ai",2025-07-30,true,Comms,,,"7/18/25, 11:34 AM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"OLM - check on account change",Done,p0,"they mentioned wanting to transfer one of the accounts to a new person. check in","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-29,true,Comms,,,"7/18/25, 11:41 AM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"MIXI - response",Done,p1,"• share confirmation",shruthi@ikhor.ai,2025-07-10,true,Comms,,,"7/10/25, 8:05 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"hibari - set up the workshop space",Done,p0,"• make space for 3 animators who will be coming in 
+• can use kytra's workspace that she can move on monday ","akira@ikhor.ai, shruthi@ikhor.ai",2025-07-28,true,Tasks,,,"7/23/25, 11:15 AM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"workshop onboarding document",Delayed,p2,"• put together onboarding material 
+    ◦ how to login 
+    ◦ links to studio kamikAI 
+    ◦ explanation of the UI 
+(08/27) delayed",shruthi@ikhor.ai,2025-08-27,false,Projects,,,"7/25/25, 5:04 PM","8/27/25, 7:58 PM",shruthi@ikhor.ai,
+"honoo / gooney's - follow up",Done,p0,"*send follow up asking about the AsOne release planned for august, can also introduce in-betweener after the convo is started*",shruthi@ikhor.ai,2025-07-29,true,Comms,,,"7/25/25, 3:58 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"ego one - response to in-btwn",Done,p0,"• one seat to be created for in-betweener
+• need to respond asking for order form signing details 
+    ◦ ask for signer name / email / role 
+    ◦ send docusign for 1 seat 
+• ask about when they want the start date and trial period","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-25,true,Comms,,,"7/25/25, 3:02 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"update character list spreadsheet",Done,p0,"update the character training spreadsheet with the latest character data list and links","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-31,true,Tasks,,,"7/24/25, 6:23 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"check nakamura availability 08/08",Done,p0,"check nakamura-san's availability on 08/08 to share her experience and thoughts on magic pen in her workflow - for asahi production",shruthi@ikhor.ai,2025-07-28,true,Comms,,,"7/24/25, 4:00 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"shirahagi gakuen follow up",Done,p0,"• share latest model training guidelines 
+• check on their internal discussion status","akira@ikhor.ai, shruthi@ikhor.ai",2025-07-28,true,Comms,,,"7/24/25, 3:59 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"qzilla - in-btwn follow up",Done,p0,"check their current evaluation status","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-28,true,Comms,,,"7/23/25, 2:54 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"imagica infos - check in",Done,p1,"• check about the schedule, expectations, scope and any support that we can provide for the making video
+• do they want their characters to be grouped into projects / hide any older characters or versions
+• how are the augmented characters performing in comparison to the other standard models 
+• what does their near term schedule look like","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-24,true,Tasks,,,"7/23/25, 2:52 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"kanji kazahaya / papriko - follow up",Done,p0,"share follow up with philipp and kazahaya",shruthi@ikhor.ai,2025-07-24,true,Comms,,,"7/23/25, 2:29 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"Nihon Kogakuin Follow-up","In progress",p0,"Arrange meeting to follow up on the use of the grant and how iKHOR might participate",ko@ikhor.ai,2025-08-28,false,"Sales Updates",,,"7/22/25, 10:57 AM","8/28/25, 3:35 PM",hilary@ikhor.ai,
+"meeting with nihon kōgakuin",Done,p0,"check about their equipment set up, their expectations and any inputs they have","shruthi@ikhor.ai, kush@ikhor.ai",2025-07-18,true,Tasks,,,"7/18/25, 11:43 AM","7/18/25, 5:17 PM",shruthi@ikhor.ai,
+"In-Betweener email blast",Done,p1,"Send emails to all studios on our contact list (current customers, prospects, dropped prospects) announcing in-Betweener
+Use materials found here: https://docs.google.com/document/d/1DneyRtyvtQYRcPh5GDZBPllc43-Y0S6j0WQ6UY1MG0M/edit?usp=sharing",ko@ikhor.ai,2025-07-31,true,"Sales Updates",,,"7/22/25, 10:31 AM","8/5/25, 7:33 PM",hilary@ikhor.ai,
+"hibari - workshop schedule finalize",Done,p0,"finalize workshop schedule with hibari for mp",shruthi@ikhor.ai,2025-07-18,true,Comms,,,"7/18/25, 6:03 PM","7/22/25, 7:18 PM",shruthi@ikhor.ai,
+"nihon kōgakuin - prep finalization email",Done,p0,"share a thank you/follow up detailing the discussed preparation and next steps",shruthi@ikhor.ai,2025-07-18,true,Comms,,,"7/18/25, 5:15 PM","7/18/25, 5:17 PM",shruthi@ikhor.ai,
+"b.bird - check on model performance",Done,p0,"check in on how the models are performing.",shruthi@ikhor.ai,2025-07-22,true,Comms,,,"7/18/25, 5:14 PM","7/22/25, 7:18 PM",shruthi@ikhor.ai,
+"nakamura - share consulting contract",Done,p0,"we typically set this up as a contractor/consulting agreement and just wanted to mention that. Under this scenario you’ll be the primary party responsible for things like taxes",shruthi@ikhor.ai,2025-07-18,true,Comms,,,"7/18/25, 2:05 PM","7/18/25, 5:17 PM",shruthi@ikhor.ai,
+"07/18 in-betweener QA",Done,p0,"jpss team qa test for bug fixes, etc.","shruthi@ikhor.ai, akira@ikhor.ai, satoshi@ikhor.ai",2025-07-18,true,Projects,,https://ikhorlabs.slack.com/archives/C08F684T01K/p1752728693501169,"7/18/25, 1:35 PM","7/22/25, 7:18 PM",shruthi@ikhor.ai,
+"Final Bosu - next steps","In progress",p1,"to drive the MSA and order process
+08/01 - possible new characters coming in
+Hilary to ping about character training",hilary@ikhor.ai,2025-08-29,false,"Sales Updates",,,"7/18/25, 11:51 AM","8/28/25, 3:38 PM",shruthi@ikhor.ai,
+"Fox / Julian - follow up",Done,p1,"follow up with Nikola re intro to Roger at Fox",hilary@ikhor.ai,2025-07-23,true,"Sales Updates",,,"7/18/25, 11:50 AM","7/22/25, 7:18 PM",shruthi@ikhor.ai,
+"shirahagi gakuen - school discount","In progress",p0,"SEND response to Shirahagi Gakuen based on our meeting 8/20.
+
+Propose as:
+1. A partnership, not a standard seat sale
+2. Ideally still nudge price up slightly
+3. In exchange for that price, guaranteed marketing/promotion commitments
+    a. NHK participation — 1 teacher/1 student
+    b. Press release: Participation in press/convos as discussed
+    c. Positive reference to other schools
+    d. Quote on website
+    e. Feedback on curriculum/materials we develop
+4. Understanding that post trial adoption, our 50% discount is the best we can offer?
+Aki to ping them","akira@ikhor.ai, todd@ikhor.ai, hilary@ikhor.ai",2025-09-03,false,Tasks,,,"7/18/25, 11:48 AM","9/1/25, 2:50 PM",shruthi@ikhor.ai,
+"imagica - response to Li",Done,p0,"• confirmation to Li-san about character trainings and in-betweener",shruthi@ikhor.ai,2025-07-10,true,Comms,,,"7/10/25, 8:23 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"LDH - discount discussion",Done,p1,"• they have requested a discount on pricing, need to share a response ",shruthi@ikhor.ai,2025-07-14,true,Comms,,https://ikhorlabs.slack.com/archives/C06KMG8TZS7/p1752127564101959,"7/10/25, 3:24 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"send invoices for august",Done,p0,"send out invoices to all studios","shruthi@ikhor.ai, satoshi@ikhor.ai",2025-07-30,true,"Client Services",,,"7/28/25, 7:13 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"square enix - follow up",Done,p0,"• send follow up email to square enix team 
+    ◦ magic pen 
+    ◦ sketch to mesh 
+    ◦ primadonna",shruthi@ikhor.ai,2025-06-27,true,Comms,,,"6/27/25, 7:21 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"follow up with nakamura-san",Done,p0,"• check in about job requirements 
+• when she can start 
+• what her conditions are",shruthi@ikhor.ai,2025-07-04,true,Comms,,,"7/1/25, 5:29 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"qzilla - iB pricing negotiation",Done,p0,"• qzilla is asking for a free trial period. 
+• need to evaluate and respond",shruthi@ikhor.ai,2025-07-02,true,Tasks,,,"7/1/25, 5:24 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"qzilla - share iB pricing details",Done,p0,"• share in-between pricing details",shruthi@ikhor.ai,2025-07-01,true,Comms,,,"7/1/25, 3:36 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"one slider iB pricing",Done,p1,"• one slider for pricing of iB with features",shruthi@ikhor.ai,2025-07-04,true,Tasks,,,"7/1/25, 3:36 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"in-betweener MSA - free trial",Done,p1,"• review japanese translation of iB MSA","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-01,true,Tasks,,,"7/1/25, 5:24 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"review in-betweener MSA JP",Done,p1,"• review japanese translation of iB MSA","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-01,true,Tasks,,,"7/1/25, 3:35 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"imagica additional data",Done,p0,"• share imagica additional data internally for validation",shruthi@ikhor.ai,2025-07-01,true,Tasks,,,"7/1/25, 3:34 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"olm - reschedule workshop",Done,p0,"• reschedule workshop to next week or after 
+• suggest to have workshop in person 
+• share model training guidelines",shruthi@ikhor.ai,2025-07-01,true,Comms,,,"7/1/25, 3:32 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"hike - share onboarding details",Done,p0,"• share onboarding process and details",shruthi@ikhor.ai,2025-07-01,true,Comms,,,"7/1/25, 3:31 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"kamikAI manual (imagica)",Done,p2,"• share EN translated version of the kamikAI manual that nakamura san prepared for imagica team members",shruthi@ikhor.ai,2025-06-27,true,Tasks,,,"6/26/25, 4:57 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"update main sales deck",Done,p2,"• update our main sales decks with this new inbetween sequence",shruthi@ikhor.ai,2025-07-08,true,Tasks,todd@ikhor.ai,https://ikhorlabs.slack.com/archives/C06KMG8TZS7/p1751358572647109?thread_ts=1751358572.647109&cid=C06KMG8TZS7,"7/1/25, 6:01 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"release notes - july",Done,p1,"work on july customer facing change log","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-28,true,Projects,,,"6/26/25, 4:40 PM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"minato mix & match training",Done,p0,"add minato mix and match data to drive folder to queue up training",shruthi@ikhor.ai,2025-06-26,true,Projects,,,"6/26/25, 2:41 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"CG Arts NYAA - share response",Done,p2,"• share confirmation about NYAA 2025 participation and share details 
+• check other details we need to know about the networking event",shruthi@ikhor.ai,2025-06-30,true,Comms,,,"6/26/25, 2:36 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"78nine - suspend account",Done,p0,"• suspend account for info@78nine.net",shruthi@ikhor.ai,2025-06-30,true,"Client Services",,,"6/26/25, 12:37 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Follow up with oddbot-- share Joao completed sequence","In progress",p1,"Oddbot would like to see a sample of finished work to understand what can be done with Magic Pen and inbetweener",todd@ikhor.ai,2025-08-15,false,"Sales Updates",,,"6/26/25, 11:58 AM","7/17/25, 12:19 PM",todd@ikhor.ai,
+"eddie / in-between - follow up",Done,p0,"HK to follow up with Eddie (jaxn) on in-betweening project",hilary@ikhor.ai,2025-06-27,true,"Sales Updates",,,"6/26/25, 11:31 AM","7/22/25, 7:18 PM",shruthi@ikhor.ai,
+"Jikei Gakuen - follow up","In progress",p3,"Ko to follow up with Ono-san on next steps (06/27)
+Ko to follow up with Ono-san again (07/18)",ko@ikhor.ai,2025-09-17,false,Comms,,,"6/26/25, 11:28 AM","9/1/25, 10:58 AM",shruthi@ikhor.ai,
+"OLM - follow up on seats",Done,p0,"• follow up on names / designations of seats
+• share the invoice, and say that once they share the seat names, we will create accounts and change the start date",shruthi@ikhor.ai,2025-06-26,true,Comms,,,"6/26/25, 11:17 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Asahi production",Done,p0,"• probably meeting at AX in LA
+• can follow up on partnership for in-betweener
+• meeting with yamaura on 07/17",ko@ikhor.ai,2025-07-21,true,"Sales Updates",,,"6/26/25, 11:14 AM","7/18/25, 5:17 PM",shruthi@ikhor.ai,
+"satoshi - invoice approval",Done,p0,"• approve the invoice",shruthi@ikhor.ai,2025-07-01,true,Tasks,,,"7/1/25, 5:30 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"NYAA - change logo",Done,p0,"• ask to change logo from ikhor to kamikai",shruthi@ikhor.ai,2025-07-02,true,Comms,,,"7/1/25, 6:42 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"imagica light anime - follow",Done,p0,"• gentle follow up to takahashi san on progress",shruthi@ikhor.ai,2025-07-10,true,Comms,todd@ikhor.ai,,"7/10/25, 3:10 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"translation of in-betweener launch copy",Done,p0,"translation of in-betweener launch copy that todd is putting together","satoshi@ikhor.ai, akira@ikhor.ai",2025-07-11,true,Tasks,,,"7/4/25, 11:35 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"b.bird character update",Done,p0,"• send character training completion notice 
+• also inform about performance","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-10,true,Comms,,,"7/9/25, 7:30 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"imagica - in-betweener update",Done,p0,"• share pricing and onboarding process + guidelines + order form
+• free trial - offer 5 days ","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-09,true,Comms,,,"7/9/25, 5:20 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"ego one - in-betweener update",Done,p0,"• share pricing and onboarding process + guidelines + order form","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-09,true,Comms,,,"7/9/25, 5:19 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"dandelion - send sales deck",Done,p0,"send sales deck to nishikawa san
+• https://www.kamik.ai/deck-sales-short-jp
+• *PW:* iKHOR2025",shruthi@ikhor.ai,2025-07-10,true,Comms,ko@ikhor.ai,,"7/9/25, 5:18 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"update in-btwn guidelines",Done,p0,"• update in-betweener guidelines with two items 
+    ◦ passing pose 
+    ◦ same dimensions for all i/p","akira@ikhor.ai, shruthi@ikhor.ai",2025-07-09,true,Tasks,,,"7/8/25, 7:16 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"78nine - share update",Done,p0,"• update on status of depreciation of older versions of characters 
+• update on status of creation of folder to include only studio char",akira@ikhor.ai,2025-07-09,true,Comms,,https://ikhorlabs.slack.com/archives/C088XMLSDUZ/p1751957381776279?thread_ts=1751956514.606739&cid=C088XMLSDUZ,"7/8/25, 5:23 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"square enix - follow up",Done,p0,"• set up meeting to discuss expectations for MP
+• also discuss with jaxn about sketch-to-mesh",shruthi@ikhor.ai,2025-07-08,true,Comms,,,"7/7/25, 9:06 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"born digital - schedule demo",Done,p2,"• schedule live demo for born digital members 
+• also schedule for Universal Entertainment",shruthi@ikhor.ai,2025-07-11,true,Comms,shruthi@ikhor.ai,,"7/7/25, 9:05 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"record in-betweener tutorial",Delayed,p1,"record in-betweener tutorial.
+(07/17) delayed due to other priorities.
+planned to be completed by friday 07/18",akira@ikhor.ai,2025-08-31,false,Tasks,todd@ikhor.ai,,"7/4/25, 9:05 PM","9/3/25, 4:44 PM",shruthi@ikhor.ai,
+"update the seat management sheet",Done,p3,"• work with hilary to fill out MSA dates and expiration dates",shruthi@ikhor.ai,2025-07-16,true,Tasks,,,"7/4/25, 11:34 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"in-betweener QA test",Done,p0,"• QA test by JPSS team","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-02,true,Tasks,,,"7/2/25, 7:09 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Suzuki Shuichi - next steps?",Done,p2,"• Suzuki Shuichi moved from jinnan studios. ","shruthi@ikhor.ai, todd@ikhor.ai",2025-07-21,true,Tasks,todd@ikhor.ai,,"7/3/25, 8:10 PM","7/17/25, 7:22 PM",shruthi@ikhor.ai,
+"hibari - in-betweener order",Done,p0,"• share order form for in betweener and get it signed to start the onboarding
+• request session to explain how to use the tool ","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-04,true,Comms,,,"7/3/25, 8:08 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"78nine - in-betweener update",Done,p1,"• share in-betweener release update (done)
+• share pricing and onboarding process + guidelines + order form
+• free trial - offer 5 days ","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-09,true,Comms,shruthi@ikhor.ai,,"7/3/25, 4:03 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"akita tsumugi - follow up",Done,p1,"• follow up to check if they have identified the person for whom the in-betweener seats need to be created 
+• on a separate thread - we need to sign MSA 
+    ◦ we won't charge for previous work as a thank you for collaboration / relationship
+    ◦ however, now that in-betweener is live, we will need to sign our standard MSA and order form for the seats 
+        ▪︎ share blank MSA and order form (NOT the free trial version)
+    ◦ we can start in the mean time, while we wait to finish the paperwork",akira@ikhor.ai,2025-07-16,true,Comms,todd@ikhor.ai,,"7/11/25, 6:10 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"akita tsumugi - follow up",Done,p1,"• follow up to check if they have identified the person for whom the in-betweener seats need to be created (done)
+• on a separate thread - we need to sign MSA 
+    ◦ we won't charge for previous work as a thank you for collaboration / relationship
+    ◦ however, now that in-betweener is live, we will need to sign our standard MSA and order form for the seats 
+        ▪︎ share blank MSA and order form (NOT the free trial version)
+    ◦ we can start in the mean time, while we wait to finish the paperwork",akira@ikhor.ai,2025-07-10,true,Comms,todd@ikhor.ai,,"7/3/25, 4:00 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"LDH - follow up",Done,p0,"• share follow up with LDH 
+    a. share paperwork details - NDA / MSA / order form - magic pen and in-betweener
+    b. share onboarding details in a separate thread - char model training, workshop, etc. ","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-04,true,Comms,shruthi@ikhor.ai,,"7/3/25, 3:52 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"translate in-betweener decks",Done,p1,"• translation of both in-betweener decks to japanese (Satoshi to translate, shru to review)","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-07-02,true,Tasks,todd@ikhor.ai,https://ikhorlabs.slack.com/archives/C06KMG8TZS7/p1751358572647109?thread_ts=1751358572.647109&cid=C06KMG8TZS7,"7/3/25, 3:50 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"imagica - follow up",Done,p0,"• share feedback on character data ",shruthi@ikhor.ai,2025-07-03,true,Comms,,,"7/2/25, 7:10 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"studio hibari - follow up",Done,p0,"• share follow up on char data 
+• ask for account details",shruthi@ikhor.ai,2025-07-07,true,Comms,,,"7/2/25, 7:09 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"kanji kazahaya / papriko - response",Done,p0,"• thanks for response
+• looking forward",shruthi@ikhor.ai,2025-07-25,true,Comms,,,"7/25/25, 6:01 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"plott - follow up",Done,p0,"• share the MSA + order form draft 
+• NDA draft 
+• sales pitch deck link 
+• ~onboarding process outline~","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-31,true,Comms,,,"7/31/25, 1:43 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"akita tsumugi - check next steps",Done,p0,"• check if they identified any admin team members to do the onboarding","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-11,true,Comms,,,"6/26/25, 11:01 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"OLM digital - share list of deployed characters",Done,p0,"• share the latest list of deployed character models
+• for Sam V2 - they can see both V1 and V2. once they confirm the performance, we can ask them to inform us, so that we can hide the older version, and show only the latest version
+• list : Sarah, Marshal, Sam V2",akira@ikhor.ai,2025-08-22,true,"Client Services",,,"8/22/25, 2:28 PM","8/22/25, 6:35 PM",shruthi@ikhor.ai,
+"eggforward - follow up on school","Not started",p0,"follow up with EggForward to see if there's any movement",hilary@ikhor.ai,2025-08-28,false,Comms,,,"8/28/25, 11:27 AM","8/28/25, 12:14 PM",shruthi@ikhor.ai,
+"doga kobo + raging bull follow up","Not started",p0,"check if there is any progress on character data preparation and IP
+check on legality of character training","satoshi@ikhor.ai, akira@ikhor.ai, shruthi@ikhor.ai",2025-09-08,false,Comms,,,"8/28/25, 11:03 AM","9/2/25, 1:31 PM",shruthi@ikhor.ai,
+"HIKE - share follow up on next steps",Done,p0,"• offer to discuss on sharing of accounts",shruthi@ikhor.ai,2025-08-28,false,Comms,,,"8/28/25, 11:01 AM","8/28/25, 5:54 PM",shruthi@ikhor.ai,
+"cue - share info package",Done,p0,"• send out the total NDA + MSA + onboarding info package","shruthi@ikhor.ai, satoshi@ikhor.ai",2025-08-28,false,Comms,,,"8/28/25, 11:00 AM","8/29/25, 6:24 PM",shruthi@ikhor.ai,
+"EgoOne - schedule next meeting",Done,p0,"schedule next meeting to discuss in-betweener","shruthi@ikhor.ai, satoshi@ikhor.ai",2025-08-28,false,Comms,,,"8/28/25, 10:59 AM","8/28/25, 5:54 PM",shruthi@ikhor.ai,
+"marza - follow up + next steps",Done,p0,"• share magic pen onboarding process 
+• will wait for inputs on IP discussion - can set up the next discussion once we have more info from their legal team
+• set up primadonna demo (after sept 16)","shruthi@ikhor.ai, akira@ikhor.ai",2025-08-29,false,Comms,,,"8/28/25, 10:56 AM","8/28/25, 5:56 PM",shruthi@ikhor.ai,
+"HIKE - share response to queries",Done,p0,"share account details, next steps, and response to queries.",shruthi@ikhor.ai,2025-08-27,false,Comms,,,"8/25/25, 9:35 PM","8/27/25, 7:58 PM",shruthi@ikhor.ai,
+"frontier works - share response to queries",Done,p0,"share response to queries shared",shruthi@ikhor.ai,2025-08-26,false,Comms,,,"8/25/25, 9:34 PM","8/26/25, 9:48 PM",shruthi@ikhor.ai,
+"imagica - set up backgrounds meeting",Done,p0,"set up meeting to discuss bg tool and primadonna, also discuss setting up user interviews during the meeting",shruthi@ikhor.ai,2025-08-22,false,Comms,,,"8/22/25, 6:14 PM","8/22/25, 6:15 PM",shruthi@ikhor.ai,
+"b.bird - update about b/w char models",Done,p0,"share that all three character models have an updated version trained with black and white line art only",shruthi@ikhor.ai,2025-08-25,false,"Client Services",,,"8/22/25, 2:27 PM","8/25/25, 9:34 PM",shruthi@ikhor.ai,
+Dandelion,"Not started",p1,"Ko to send out MSA comments/revisions August 29",ko@ikhor.ai,2025-08-29,false,Comms,,,"8/28/25, 1:22 PM","8/28/25, 2:55 PM",akira@ikhor.ai,
+"Magic pen fixing Chinese-kanji",Done,p0,"Magic pen fixing Chinese-kanji japanese display",akira@ikhor.ai,2025-08-25,false,Tasks,,,"8/22/25, 11:55 AM","8/22/25, 1:11 PM",akira@ikhor.ai,
+"in-betweener deck update",Delayed,p1,"As discussed, we’ll use green, red, yellow to indicate how good our current inbetweener is at these kinds of cuts.
+
+Complicated cuts will have explanatory text","akira@ikhor.ai, kush@ikhor.ai",2025-08-25,false,Tasks,,,"8/22/25, 11:45 AM","9/3/25, 4:44 PM",akira@ikhor.ai,
+"Digital Hollywood","Not started",p1,"Ko and Go to set up introduction (set up meeting in September)",ko@ikhor.ai,2025-08-29,false,Comms,,,"8/21/25, 4:25 PM","8/28/25, 11:02 AM",akira@ikhor.ai,
+"Hakuhodo - follow up","Not started",p1,"Ko to follow up late August",ko@ikhor.ai,2025-08-29,false,Comms,,,"8/21/25, 4:21 PM","8/28/25, 11:02 AM",akira@ikhor.ai,
+"Princess Bento","Not started",p1,"HK to follow up if haven't recevied training data (week of 25 Aug)",hilary@ikhor.ai,2025-08-28,false,"Sales Updates",,,"8/21/25, 4:20 PM","8/21/25, 4:20 PM",akira@ikhor.ai,
+"Baboon Animation - Follow up","In progress",p1,"Todd followed up. Pending names for potential trial. Got their deck.",todd@ikhor.ai,2025-08-22,false,"Sales Updates",,,"8/21/25, 4:19 PM","8/21/25, 4:24 PM",akira@ikhor.ai,
+"Baobab (Maureen)","Not started",p1,"Coco to give friendly nudge - week of Aug 21",coco@ikhor.ai,2025-08-22,false,"Sales Updates",,,"8/21/25, 4:16 PM","8/21/25, 4:17 PM",akira@ikhor.ai,
+"FOX/ Julian","Not started",p1,"Coco to ping Nikola about introduction - if not reach back out to Julian",coco@ikhor.ai,2025-08-28,false,"Sales Updates",,,"8/21/25, 4:15 PM","8/21/25, 4:15 PM",akira@ikhor.ai,
+"Shirahai Gakuen",Done,p1,"Hilary and Aki to do marketing proposal","akira@ikhor.ai, hilary@ikhor.ai",2025-08-22,false,Comms,,,"8/21/25, 4:09 PM","8/26/25, 5:53 PM",akira@ikhor.ai,
+"CG Arts - follow up with updates","Not started",p2,"share updates on backgrounds and primadonna","shruthi@ikhor.ai, todd@ikhor.ai, ko@ikhor.ai",2025-09-16,false,"Sales Updates",,,"8/28/25, 11:36 AM","8/28/25, 11:37 AM",shruthi@ikhor.ai,
+"HIKE - MSA",Done,p0,"HK to send out MSA and order form Aug 28",hilary@ikhor.ai,2025-08-28,false,Comms,,,"8/28/25, 2:55 PM","8/28/25, 4:37 PM",akira@ikhor.ai,
+"UFO TABLE - MSA",Done,p0,"send out MSA and Order form",akira@ikhor.ai,2025-08-26,false,Comms,,,"8/21/25, 3:23 PM","8/27/25, 8:49 PM",akira@ikhor.ai,
+"frontier works - share MSA + order form","Not started",p0,"• share updated MSA + order form 
+• magic pen + in betweener 
+• share response to questions ","shruthi@ikhor.ai, satoshi@ikhor.ai",2025-09-04,false,Comms,,https://ikhorlabs.slack.com/archives/C06KMG8TZS7/p1756810611888879,"9/3/25, 1:46 PM","9/3/25, 5:45 PM",shruthi@ikhor.ai,
+"marza - response on next steps",Done,p0,"• share response to narita san 
+• we're working on the questionnaire 
+• primadonna - will get back soon ",shruthi@ikhor.ai,2025-09-03,false,Comms,,,"9/3/25, 4:35 PM","9/3/25, 4:37 PM",shruthi@ikhor.ai,
+"plott - response",Done,p0,"send confirmation and response to Okawa san",shruthi@ikhor.ai,2025-09-03,false,Comms,,,"9/3/25, 4:35 PM","9/3/25, 4:37 PM",shruthi@ikhor.ai,
+"Two-pager for Born Digital and website explaining artist friendly approach etc","Not started",,"messaging along the lines this is NOT your typical AI company-- it’s one that respects & empowers creators, fully protects your IP, and generates outputs that are indistinguishable from hand-drawn ones, giving illustrators and animators full control of the process. Because of that leading animation studios have proven this tool and approach in current productions and are seeing real efficiency gains.  Don’t miss out on experiencing and seeing how this technology, which everyone knows will impact their industry can be harnessed TODAY in a way that your teams will embrace and actually enjoy using.",coco@ikhor.ai,2025-09-05,false,Projects,,,"9/3/25, 4:30 PM","9/3/25, 4:33 PM",hilary@ikhor.ai,
+"hike - follow up",Done,p0,"need to send follow up on MSA (since it has been a week)",ko@ikhor.ai,2025-09-04,false,Comms,,,"9/3/25, 3:32 PM","9/3/25, 5:45 PM",shruthi@ikhor.ai,
+"hibari - get account information","In progress",p0,"• get information for the next 3 accounts
+    ◦ name, role, email address 
+    ◦ which project - which character 
+• MSA DocuSign confirmation ",satoshi@ikhor.ai,2025-09-04,false,Comms,,,"9/3/25, 3:31 PM","9/3/25, 5:45 PM",shruthi@ikhor.ai,
+"primadonna deck preparation","Not started",p1,"prepare a deck to explain primadonna :
+• how the tool works
+• what kind of workflows we believe it will support
+• how the outputs are generated, what the control parameters are 
+REQUIRED for EgoOne and Marza","jackson@ikhor.ai, todd@ikhor.ai, shruthi@ikhor.ai",2025-09-09,false,Tasks,,,"9/3/25, 1:55 PM","9/3/25, 1:57 PM",shruthi@ikhor.ai,
+"ego one - follow up - in-betweener","Not started",p0,"• share follow up with yoshida san 
+    ◦ can continue the account (no additional action required, the accounts are ready as-is) 
+    ◦ as for the feedback, we have told the R&D team, and are finding a solution 
+    ◦ can they share some samples for the FX cuts where the output was not up to the mark 
+• primadonna demo (9/16 was asked) 
+    ◦ we are putting together a deck 
+    ◦ once it's ready, will share 
+    ◦ can do scheduling after that ","shruthi@ikhor.ai, satoshi@ikhor.ai",2025-09-03,false,Comms,,,"9/3/25, 1:51 PM","9/3/25, 1:55 PM",shruthi@ikhor.ai,
+"qzilla - follow up - BG beta tool","Not started",p0,"• share the order form for BG beta tool 
+• share the next steps 
+    ◦ number of accounts = 5?
+    ◦ name / role / email address of seats 
+    ◦ start date required 
+    ◦ can create account in 1 day ",shruthi@ikhor.ai,2025-09-04,false,Comms,,,"9/3/25, 1:49 PM","9/3/25, 4:47 PM",shruthi@ikhor.ai,
+"qzilla - backgrounds order form","Not started",p0,"prepare japanese courtesy translation of the partnership priced order form for backgrounds beta tool
+• shru to review translation before sharing","shruthi@ikhor.ai, satoshi@ikhor.ai",2025-09-04,false,Tasks,,,"9/3/25, 1:48 PM","9/3/25, 5:45 PM",shruthi@ikhor.ai,
+"qzilla - batch processing requirements","Not started",p1,"put together all the requirement details received so far about the batch processing tool (mainly aimed for sequential images of the videos)
+• batch processing count 
+• file format related 
+• folder structure related ",shruthi@ikhor.ai,2025-09-09,false,Tasks,,,"9/3/25, 1:42 PM","9/3/25, 1:49 PM",shruthi@ikhor.ai,
+"Akita Tsumugi - data follow up","Not started",p0,"Aki to check-in on data for fine tune - week of 2 September",akira@ikhor.ai,2025-09-04,false,Comms,,,"8/28/25, 2:58 PM","9/3/25, 4:47 PM",akira@ikhor.ai,
+"marza - add comments to questionnaire","Not started",p0,"• the english questions are not clear
+• look through the japanese questions if we can add in more context 
+• 5, 11 (not quite sure I understand what manuals they are talking about here), 12, 16, 17","shruthi@ikhor.ai, satoshi@ikhor.ai",2025-09-04,false,Tasks,,https://ikhorlabs.slack.com/archives/C06KMG8TZS7/p1756723620736149,"9/3/25, 1:39 PM","9/3/25, 3:25 PM",shruthi@ikhor.ai,
+"Inbetweener product tracker","Not started",p1,"<@U0737DC9L2G> — As part of running point on the inbetweener, can I please ask you to build a google sheet that you share with <@U06LABYK33J> <@U06KJLR4GBF> <@U07H83TA3K7> and I  called *INBETWEENER FEEDBACK* with four specific tabs:
+1. *SEAT SUMMARY —* as we discussed earlier, this is a simple chart listing any current, former or in-process of converting customers in a few columns:
+    a. Seat tracker by status (each a column)
+        i. Contracted seats (but not yet active)
+        ii. Active seats
+        iii. Signing seats
+        iv. Discussing seats
+        v. Trialed seats (churned)
+    b. A Workflow/Adoption issues column describing any workflow barriers to adoption. For example, for Sakurai, creating the douga trace lines plus genga shading requires new work on their parts
+    c. Plus, a Notes column describing overall status of situation (eg. dates of trial, hopes, fears)
+    d. Plus, a General feedback column (if received)
+2. *BUGS* such as the preview speed inconsistency mentioned above
+3. *FEATURE REQUESTS* such as MP4/Movie export
+4. Most importantly — *OUTPUT ISSUES* such as the comments on effects outputs not being usable.
+    a. For this last tab, as I think you’ve been discussing with <@U06LABYK33J> -- we ideally would set up follow up calls or get specific feedback on where/what the issues they see with the cuts are-- visually annotated or specific frame issues they can verbally point out to us.
+    b. This should be a key activity beyond sales-- trying to improve the specific feedback on individual cuts so you can convey this to the research team",akira@ikhor.ai,2025-09-10,false,Projects,todd@ikhor.ai,,"9/2/25, 10:42 PM","9/2/25, 10:45 PM",todd@ikhor.ai,"hilary@ikhor.ai, jackson@ikhor.ai, coco@ikhor.ai"
+"plott - response to MSA queries",Done,p0,"• share confirmation to queries related to MSA ","shruthi@ikhor.ai, satoshi@ikhor.ai",2025-09-01,false,Comms,,,"9/1/25, 11:40 AM","9/2/25, 8:03 PM",shruthi@ikhor.ai,
+"Marza - NDA",Done,p0,"Marza NDA (HK to check new version)",hilary@ikhor.ai,2025-08-28,false,Comms,,,"8/28/25, 3:12 PM","8/28/25, 5:54 PM",akira@ikhor.ai,
+"Asahi Production","Not started",p0,"Ko reaching out to Yagi week of 2 Sep to follow up and get better evaluation",ko@ikhor.ai,2025-09-03,false,Comms,,,"8/28/25, 3:12 PM","9/3/25, 4:43 PM",akira@ikhor.ai,
+Crunchyroll,"Not started",p1,"Ko to research and Tanifuji will ask where the info came from (week of 2 Sep)","ko@ikhor.ai, tanifuji@ikhor.ai",2025-09-03,false,Comms,,,"8/28/25, 3:10 PM","8/28/25, 3:11 PM",akira@ikhor.ai,
+"UFO Table",Done,p0,"MSA is out - Aki to follow-up on 2 Sep if no reply",akira@ikhor.ai,2025-09-03,false,Comms,,,"8/28/25, 3:08 PM","9/3/25, 5:45 PM",akira@ikhor.ai,
+"discuss character data upload / management","Not started",p1,"• outline how the character data sharing happens 
+• whether it comes from animators or the executive team 
+• how the data is managed","shruthi@ikhor.ai, akira@ikhor.ai, todd@ikhor.ai",2025-09-10,false,Projects,,,"8/28/25, 3:08 PM","8/28/25, 5:19 PM",akira@ikhor.ai,
+"MIXI - check in",Done,p1,"MIXI is now checking with legal - expected reply week of 2 Sep
+follow up if no response",shruthi@ikhor.ai,2025-09-03,false,Comms,,,"8/28/25, 2:59 PM","9/3/25, 4:39 PM",akira@ikhor.ai,
+"Pierrot - follow up","Not started",p1,"Haven't heard back since before Obon - Ko to follow up and press for an animator to evaluate the tools - reset the convo",ko@ikhor.ai,2025-08-29,false,Comms,,,"8/21/25, 3:31 PM","8/28/25, 3:06 PM",akira@ikhor.ai,
+"Kadokawa - Tamurasan","Not started",p1,"speak to Tamura san about NHK and possibilty of Raging Bull or Doga Kobo　
+to check in with Tamara-san on legality of characters and on investment - 29 Aug",ko@ikhor.ai,2025-08-29,false,Comms,,,"8/21/25, 3:20 PM","8/28/25, 1:21 PM",akira@ikhor.ai,
+"kadokawa - invoice correction",Done,p0,"payment name is wrong",satoshi@ikhor.ai,2025-07-31,true,"Client Services",,https://ikhorlabs.slack.com/archives/C08F684T01K/p1753936863260289,"7/31/25, 1:44 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"cafe group - moe - restart convo",Done,p1,"look for method to re-engage -
+- last contact june 6 (about the NDA signed)
+- can re-start convo with in-betweener announcement",shruthi@ikhor.ai,2025-08-07,true,Comms,,,"8/1/25, 12:38 PM","8/7/25, 7:01 PM",shruthi@ikhor.ai,
+"studio hibari - casual follow up",Done,p0,"pre-holiday follow up to check how their internal evaluation / discussion went",ko@ikhor.ai,2025-08-07,true,Comms,,,"8/7/25, 11:13 AM","8/7/25, 7:01 PM",shruthi@ikhor.ai,
+"mappa - primadonna outreach","Not started",p1,"jackson and kytra to prepare material for primadonna so that we can reach out to them to restart convo",jackson@ikhor.ai,2025-08-18,false,"Sales Updates",,,"8/7/25, 11:08 AM","9/3/25, 4:47 PM",shruthi@ikhor.ai,
+"toei / dandelion - follow up",Done,p2,"• follow up sent to nishikawa san (08/06)
+• they have some challenges with their production and this might take some time ",ko@ikhor.ai,2025-08-07,true,Comms,,,"8/7/25, 10:59 AM","8/7/25, 7:01 PM",shruthi@ikhor.ai,
+"Backgrounds project: customer research sessions","Not started",p1,"Let’s please calendar a bunch of 1 hour research calls with existing customers relating to the background project.","shruthi@ikhor.ai, akira@ikhor.ai",2025-09-09,false,Comms,todd@ikhor.ai,,"8/5/25, 5:27 PM","9/2/25, 6:24 PM",todd@ikhor.ai,
+"OLM Digital - share invoice",Done,p0,"share updated invoice for the 1 additional seat","shruthi@ikhor.ai, hilary@ikhor.ai",2025-08-06,false,"Client Services",,,"8/5/25, 12:48 PM","8/18/25, 2:00 PM",shruthi@ikhor.ai,
+"EgoOne - in-betweener session",Done,p0,"explanation session for basic functionalities of in-betweener and all the features available.
+zoom session 08/05 11:00 - 12:00","shruthi@ikhor.ai, akira@ikhor.ai",2025-08-05,true,"Client Services",,,"8/5/25, 12:45 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"imagica infos - in-betweener guidelines",Done,p1,"• share in-betweener guidelines to accelerate their internal evaluation 
+• also share the update once character older versions are hidden, and character grouping is completed
+    ◦ ask where Rizero should be grouped 
+    ◦ do they need japanese name display","shruthi@ikhor.ai, akira@ikhor.ai",2025-08-08,false,Comms,,,"8/5/25, 12:44 PM","8/8/25, 7:52 PM",shruthi@ikhor.ai,
+"imagica infos - check in",Done,p0,"bi-weekly check in with imagica
+• no update on the making of video 
+• in-betweener is under evaluation (free trial dates to be received after obon holidays) 
+• character grouping information shared 
+• character older versions to be hidden 
+• primadonna interest shown - need to discuss internally",shruthi@ikhor.ai,2025-08-05,true,Tasks,,,"8/5/25, 12:42 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"frontier works - clarifications",Done,p0,"send response to clarifications from FW",shruthi@ikhor.ai,2025-08-05,true,Comms,,,"8/5/25, 12:42 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"nihon kogakuin - review proposal",Done,p1,"review and add comments on the proposal draft to finalize next steps","shruthi@ikhor.ai, ko@ikhor.ai",2025-08-04,true,Tasks,,,"8/1/25, 12:35 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"universal entertainment- follow up",Done,p1,"follow up on status if no movement",akira@ikhor.ai,2025-08-20,false,Comms,,,"8/7/25, 11:31 AM","8/22/25, 11:50 AM",shruthi@ikhor.ai,
+"square enix - set up next meeting","Not started",p1,"next step : co-development
+put together a high level agenda for sketch to mesh to set up the next meeting
+08/22 - hold off until there's more clarity on the investment related conversation",shruthi@ikhor.ai,2025-09-05,false,Tasks,,https://ikhorlabs.slack.com/archives/C06KMG8TZS7/p1754562784474409,"8/8/25, 12:22 PM","9/2/25, 6:23 PM",shruthi@ikhor.ai,
+"square enix - prepare for next steps",Done,p1,"next step : co-development
+put together a high level agenda for sketch to mesh to set up the next meeting","shruthi@ikhor.ai, todd@ikhor.ai, jackson@ikhor.ai",2025-08-08,true,Tasks,,,"8/1/25, 12:23 PM","8/8/25, 4:50 PM",shruthi@ikhor.ai,
+"kadokawa - follow up",Done,p0,"satoshi to follow up with yamashita-san, now that the MSA is extended to check on how to proceed with seat allocation, etc.
+
+• 1 additional seat order form to be shared 
+• accounts to be created
+• workshop scheduling in progress","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-08-20,false,Comms,,,"8/1/25, 12:09 PM","8/20/25, 1:57 PM",shruthi@ikhor.ai,
+"business cards - tanifuji",Done,p1,"business cards for tanifuji
+name : Osamu Tanifuji
+role : Business Development Lead
+phone : +81 09014393849
+email : tanifuji@ikhor.ai 
+
+08/18 - missing japanese text",akira@ikhor.ai,2025-08-25,false,Tasks,,,"8/18/25, 2:01 PM","8/22/25, 6:09 PM",shruthi@ikhor.ai,
+"business cards - nakamura",Done,p1,"business cards for nakamura
+name : Chiharu Nakamura
+role : Consulting Animator
+phone : +81 3 4226 3896 
+email : nakamura@ikhor.ai 
+
+08/18 - missing japanese text",akira@ikhor.ai,2025-08-25,false,Tasks,,,"7/31/25, 6:24 PM","8/22/25, 11:42 AM",shruthi@ikhor.ai,
+"business cards - satoshi",Done,p1,"business cards for satoshi
+name : Satoshi Fukabori
+role : Japan Sales Team
+phone : +81 3 4226 3896
+email : satoshi@ikhor.ai",akira@ikhor.ai,2025-08-18,false,Tasks,,,"7/31/25, 6:18 PM","8/18/25, 2:00 PM",shruthi@ikhor.ai,
+"universal entertainment - follow up",Done,p0,"• ~CC born digital sugimoto san~ 
+• share the MSA + order form draft 
+• NDA draft 
+• sales pitch deck link 
+• ~onboarding process outline~","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-31,true,Comms,,,"7/31/25, 3:59 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"OLM - thai subsidiary seat",Done,p0,"get information about account details from yotsukura san (no response yet)
+08/04 update :
+• account creation information received 
+• account created and assigned to org 
+• login + password reset information shared
+• invoice information clarification done ","shruthi@ikhor.ai, akira@ikhor.ai",2025-08-04,true,"Client Services",,,"7/31/25, 3:09 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"EgoOne - in-betweener seat",Done,p0,"青木　唯 | Aoki Yui	eo_aoki@ego-one.net
+seat created as of 08/01",shruthi@ikhor.ai,2025-08-01,true,"Client Services",,,"7/31/25, 3:08 PM","8/5/25, 7:33 PM",shruthi@ikhor.ai,
+"plott - follow up",Done,p1,"follow up on status if no movement",akira@ikhor.ai,2025-08-07,true,Comms,,,"8/7/25, 11:30 AM","8/7/25, 7:01 PM",shruthi@ikhor.ai,
+"upload all ikhor char data",Done,p1,"upload all the character training data into the studio data folder
+waiting on data sets","shruthi@ikhor.ai, kush@ikhor.ai",2025-08-20,false,Tasks,,,"8/7/25, 4:53 PM","8/20/25, 1:56 PM",shruthi@ikhor.ai,
+"Doga-Kobo - get characters and set training",Done,p1,"get characters from Doga Kobo and set training for both sessions, give character template training session",akira@ikhor.ai,2025-08-25,false,Comms,,,"8/21/25, 10:40 AM","8/28/25, 11:03 AM",akira@ikhor.ai,
+"character model training status -  08/21",Done,p0,"share the latest character model training status",shruthi@ikhor.ai,2025-08-21,false,Tasks,,,"8/20/25, 1:57 PM","8/22/25, 11:43 AM",shruthi@ikhor.ai,
+"hibari - schedule next set of workshops",Done,p0,"• share order form for new 6 seats 
+• request account details 
+• schedule next set of workshops for group2
+• 2 characters are trained, but need to be deployed - Satoshi to follow-up","shruthi@ikhor.ai, satoshi@ikhor.ai",2025-09-02,false,Comms,,,"8/20/25, 4:41 PM","9/2/25, 8:02 PM",shruthi@ikhor.ai,
+"imagica light anime - follow up",Done,p0,"• share that we made a breakthrough 
+• ready to revisit the pricing and timelines
+• set up a meeting to discuss details",shruthi@ikhor.ai,2025-08-20,false,Comms,,,"8/19/25, 4:12 PM","8/20/25, 5:31 PM",shruthi@ikhor.ai,
+"character model training status -  09/04","Not started",p0,"share the latest character model training status",shruthi@ikhor.ai,2025-09-04,false,Tasks,,,"9/3/25, 4:43 PM","9/3/25, 4:43 PM",shruthi@ikhor.ai,
+"character model training status -  09/03",Done,p0,"share the latest character model training status",shruthi@ikhor.ai,2025-09-03,false,Tasks,,,"9/2/25, 6:23 PM","9/3/25, 4:43 PM",shruthi@ikhor.ai,
+"character model training status -  09/02",Done,p0,"share the latest character model training status",shruthi@ikhor.ai,2025-09-02,false,Tasks,,,"8/28/25, 8:26 PM","9/2/25, 6:23 PM",shruthi@ikhor.ai,
+"character model training status -  08/28",Done,p0,"share the latest character model training status",shruthi@ikhor.ai,2025-08-28,false,Tasks,,,"8/27/25, 7:57 PM","8/28/25, 8:26 PM",shruthi@ikhor.ai,
+"character model training status -  08/27",Done,p0,"share the latest character model training status",shruthi@ikhor.ai,2025-08-27,false,Tasks,,,"8/26/25, 9:47 PM","8/27/25, 7:57 PM",shruthi@ikhor.ai,
+"character model training status -  08/26",Done,p0,"share the latest character model training status",shruthi@ikhor.ai,2025-08-26,false,Tasks,,,"8/25/25, 8:35 PM","8/26/25, 9:48 PM",shruthi@ikhor.ai,
+"character model training status -  08/25",Done,p0,"share the latest character model training status",shruthi@ikhor.ai,2025-08-25,false,Tasks,,,"8/22/25, 11:43 AM","8/25/25, 8:35 PM",shruthi@ikhor.ai,
+"character model training status -  08/20",Done,p0,"share the latest character model training status",shruthi@ikhor.ai,2025-08-20,true,Tasks,,,"8/19/25, 6:56 PM","8/22/25, 11:35 AM",shruthi@ikhor.ai,
+"OLM - follow up on in-betweener","Not started",p0,"check the status on in-betweener (yotsukura)",shruthi@ikhor.ai,2025-09-05,false,Comms,,,"8/7/25, 4:57 PM","9/1/25, 10:56 AM",shruthi@ikhor.ai,
+"character model training status -  08/19",Done,p0,"share the latest character model training status",shruthi@ikhor.ai,2025-08-19,false,Tasks,,,"8/18/25, 6:26 PM","8/19/25, 6:56 PM",shruthi@ikhor.ai,
+"marza - follow up",Done,p1,"• follow-up on NDA if no response by 8//22",ko@ikhor.ai,2025-08-22,false,Comms,,,"8/18/25, 6:02 PM","8/22/25, 2:23 PM",shruthi@ikhor.ai,
+"akita tsumugi - create in-betweener seats",Done,p0,"• share account creation/password reset link 
+• offer 30-60 min onboarding explanation session (online) ",akira@ikhor.ai,2025-08-25,false,"Client Services",,,"8/18/25, 5:20 PM","8/26/25, 9:49 PM",shruthi@ikhor.ai,
+"gooney's / honoo - set up next meeting",Done,p1,"• set up next meeting for gooney's 
+• possibly check in with honoo
+• next meeting - 
+    ◦ updates of magic pen 
+    ◦ introduction of in-betweener 
+    ◦ check interest in backgrounds / 3D",shruthi@ikhor.ai,2025-08-20,false,Comms,,,"8/18/25, 5:09 PM","8/22/25, 1:30 PM",shruthi@ikhor.ai,
+"plott - response to queries",Done,p0,"response to queries shared",shruthi@ikhor.ai,2025-08-19,false,Comms,,,"8/18/25, 5:08 PM","8/19/25, 6:55 PM",shruthi@ikhor.ai,
+"frontier works - response to queries",Done,p0,"• cloud based - yes 
+• pricing - final pricing not fixed yet",shruthi@ikhor.ai,2025-08-18,false,Comms,,,"8/18/25, 5:06 PM","8/19/25, 6:56 PM",shruthi@ikhor.ai,
+"gree - follow up on queries",Done,p0,"• response to queries on terms & conditions
+    ◦ in-betweener - haraguchi from david production to reach out separately 
+    ◦ magic pen - they will continue to check on security concerns",shruthi@ikhor.ai,2025-08-18,false,Comms,,,"8/18/25, 5:03 PM","8/19/25, 6:56 PM",shruthi@ikhor.ai,
+"marza - send follow up",Done,p0,"set up live demo with their team",shruthi@ikhor.ai,2025-08-07,true,Comms,,,"8/7/25, 7:01 PM","8/7/25, 7:02 PM",shruthi@ikhor.ai,
+"gree - follow up",Done,p0,"follow up to check on status",shruthi@ikhor.ai,2025-08-07,true,Comms,,,"8/7/25, 5:09 PM","8/7/25, 7:01 PM",shruthi@ikhor.ai,
+"A1 pictures - follow up","Pending Reponse",p0,"we offered for kush to do the demo at their studio, but waiting on response (06/19)
+
+(07/18) - share in-betweener intro
+• tell that tool is finalized and refined 
+• the outputs are so much better due to our continuous improvement from design partner feedback",ko@ikhor.ai,2025-08-20,false,Comms,,,"6/26/25, 11:12 AM","8/21/25, 3:30 PM",shruthi@ikhor.ai,
+"Kadokawa MSA translation",Done,p0,"• translate the delta part of the stronger worded MSA and create courtesy translation document ","shruthi@ikhor.ai, satoshi@ikhor.ai",2025-06-27,true,Tasks,,,"6/26/25, 10:58 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"anime glossary terms","In progress",p3,"(07/17) next step : to conceptualize the way to process the camera angles, perspectives and views.",shruthi@ikhor.ai,2025-09-26,false,Projects,,,"5/28/25, 1:12 PM","7/17/25, 6:46 PM",shruthi@ikhor.ai,
+"character model training status - 07/29",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-29,true,Tasks,,,"7/28/25, 7:07 PM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"character model training status - 06/04",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-04,true,"Sales Updates",,,"6/4/25, 8:58 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/18",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-18,true,"Sales Updates",,,"6/19/25, 11:00 AM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 07/01",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-01,true,"Sales Updates",,,"6/30/25, 7:12 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 08/07",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-08-07,true,Tasks,,,"8/6/25, 8:48 PM","8/7/25, 7:01 PM",shruthi@ikhor.ai,
+"character model training status - 08/06",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-08-06,true,Tasks,,,"8/5/25, 7:32 PM","8/7/25, 7:01 PM",shruthi@ikhor.ai,
+"character model training status - 08/05",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-08-05,true,Tasks,,,"8/1/25, 5:22 PM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"character model training status - 08/01",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-08-01,true,Tasks,,,"7/31/25, 7:28 PM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"character model training status - 07/31",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-31,true,Tasks,,,"7/30/25, 5:18 PM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"character model training status - 07/30",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-30,true,Tasks,,,"7/30/25, 5:17 PM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"character model training status - 07/28",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-28,true,Tasks,,,"7/25/25, 8:16 PM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"check status on all open comms 05/29",Done,,"update canvas with currently open comms, legal processing and scheduling to keep track.",satoshi@ikhor.ai,2025-05-29,true,"Sales Updates",,,"5/28/25, 4:06 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 07/25",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-25,true,Tasks,,,"7/24/25, 6:23 PM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"character model training status - 07/24",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-24,true,Tasks,,,"7/23/25, 7:06 PM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"character model training status - 07/23",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-23,true,Tasks,,,"7/22/25, 7:08 PM","7/24/25, 10:39 AM",shruthi@ikhor.ai,
+"character model training status - 07/22",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-22,true,Tasks,,,"7/18/25, 5:16 PM","7/22/25, 7:18 PM",shruthi@ikhor.ai,
+"character model training status - 07/18",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-18,true,Tasks,,,"7/17/25, 6:39 PM","7/18/25, 5:17 PM",shruthi@ikhor.ai,
+"character model training status - 07/17",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-17,true,Tasks,,,"7/17/25, 6:39 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 07/16",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-16,true,Tasks,,,"7/11/25, 6:09 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 07/11",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-11,true,Tasks,,,"7/10/25, 6:43 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 07/10",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-10,true,Tasks,,,"7/9/25, 7:13 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"check status on all open comms 05/28",Done,,"update canvas with currently open comms, legal processing and scheduling to keep track.",satoshi@ikhor.ai,2025-05-28,true,"Sales Updates",,,"5/28/25, 1:53 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"check status on all open comms 05/30",Done,,"update canvas with currently open comms, legal processing and scheduling to keep track.",satoshi@ikhor.ai,2025-05-30,true,"Sales Updates",,,"5/29/25, 8:27 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 07/08",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-08,true,Tasks,,,"7/7/25, 7:03 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"japanese website copy creation",Done,p1,"create / review japanese copy for kamikai website",satoshi@ikhor.ai,2025-06-27,true,Tasks,,,"5/28/25, 3:19 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/04",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-04,true,"Sales Updates",,,"6/3/25, 9:17 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/03",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-03,true,"Sales Updates",,,"6/2/25, 5:37 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/02",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-02,true,"Sales Updates",,,"5/30/25, 3:33 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Launch Box - share all input data for Murabito A",Done,,"we received a large volume of character data and other settei, background and reference data from Launch Box for Murabito A in april.
+a new set of latest data was added as of May 20.
+need to share this with the whole team before the meeting with Murabito A on june 3",shruthi@ikhor.ai,2025-06-02,true,"Sales Updates",,,"5/30/25, 2:22 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"78nine - suspend BG access",Done,,"suspend access to beta version of BG generator",shruthi@ikhor.ai,2025-06-03,true,"Client Services",,,"5/30/25, 12:48 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"78nine - suspend BG access",Done,,"78nine wants to cancel subscription to the backgrounds tool, and re-start the subscription once we are able to handle portrait orientation backgrounds.
+• the ask is very reasonable, and we understand that it's important to tackle the requirement. we definitely understand that this is a hard requirement in order to use the BG tool. however, we are unable to pick it up at the moment. 
+• re-issue invoice for no BG seats",shruthi@ikhor.ai,2025-05-30,true,Comms,,,"5/30/25, 12:21 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"share NYAA update / report",Done,p0,"we received the NYAA report from CG Arts.",shruthi@ikhor.ai,2025-06-27,true,Tasks,,,"5/29/25, 10:47 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"kadokawa - share follow up",Done,,"• follow up to yamashita-san to check if there is any update on the feedback from the users ",satoshi@ikhor.ai,2025-05-28,true,Comms,,,"5/29/25, 6:45 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"kadokawa - share follow up",Done,,"• sent follow up to yamashita-san to check if there is any update on the feedback from the users (05/28) 
+• sent second follow up on 06/04",satoshi@ikhor.ai,2025-06-18,true,Comms,,,"5/29/25, 6:44 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"JPSS team QA test",Done,p0,"once the updates are released to staging, QA test to be done by JPSS team","shruthi@ikhor.ai, akira@ikhor.ai, satoshi@ikhor.ai",2025-06-27,true,Projects,,,"6/4/25, 6:01 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"check status on all open comms 06/02",Done,,"update canvas with currently open comms, legal processing and scheduling to keep track.",satoshi@ikhor.ai,2025-06-02,true,"Sales Updates",,,"5/30/25, 4:13 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"JPSS team QA test",Done,,"once the updates are released to staging, QA test to be done by JPSS team","shruthi@ikhor.ai, akira@ikhor.ai, satoshi@ikhor.ai",2025-06-03,true,Projects,,,"5/28/25, 3:15 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"MIXI - identify attendees",Done,,"identify the 10 attendees that will join the demo
+info in the business cards from previous mtg (?)",shruthi@ikhor.ai,2025-06-09,true,"Sales Updates",,,"5/28/25, 2:49 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"prompt translation review",Done,p3,"review the prompt translation list report generated.
+project led by Akira and Satoshi
+• 06/02 - added new sheet for 05-26>06-01","akira@ikhor.ai, satoshi@ikhor.ai",2025-08-21,false,Projects,,,"5/28/25, 2:41 PM","8/27/25, 8:50 PM",shruthi@ikhor.ai,
+"prepare JP release note",Done,,"english release note for june is ready.
+prepare japanese customer facing release note",akira@ikhor.ai,2025-06-11,true,Projects,,,"5/28/25, 2:32 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"check status on all open comms 06/09",Done,,"update canvas with currently open comms, legal processing and scheduling to keep track.",satoshi@ikhor.ai,2025-06-09,true,"Sales Updates",,,"6/6/25, 10:00 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"check status on all open comms 06/06",Done,,"update canvas with currently open comms, legal processing and scheduling to keep track.",satoshi@ikhor.ai,2025-06-06,true,"Sales Updates",,,"6/5/25, 7:50 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"check status on all open comms 06/05",Done,,"update canvas with currently open comms, legal processing and scheduling to keep track.",satoshi@ikhor.ai,2025-06-05,true,"Sales Updates",,,"6/4/25, 8:57 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"check status on all open comms 06/04",Done,,"update canvas with currently open comms, legal processing and scheduling to keep track.",satoshi@ikhor.ai,2025-06-04,true,"Sales Updates",,,"6/3/25, 9:16 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"check status on all open comms 06/03",Done,,"update canvas with currently open comms, legal processing and scheduling to keep track.",satoshi@ikhor.ai,2025-06-03,true,"Sales Updates",,,"6/2/25, 5:34 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"character model training status - 07/09",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-09,true,Tasks,,,"7/8/25, 8:17 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 07/07",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-07,true,Tasks,,,"7/4/25, 7:54 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/06",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-06,true,"Sales Updates",,,"6/5/25, 7:49 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"imagica - in-betweener",Done,,"• share the update about in-betweener (timeline of release, suspension of free beta access)",shruthi@ikhor.ai,2025-06-10,true,Comms,,,"5/29/25, 7:49 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"ego one - follow up",Done,,"Ko-san is checking with Hibino-san on 05/28 about the current status. revisit next steps once updates are clear.
+conclusion : it may be better not to push, since this is a smaller seat sales, and there currently is no scope for expansion",shruthi@ikhor.ai,2025-06-09,true,Comms,,,"5/28/25, 1:46 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"kadokawa - check current status",Done,,"• SLACK - set up channels
+    ◦ Nihodo
+    ◦ other studios 
+        ▪︎ Satoshi-san note : since Yamashita-san is very particular about the comms, may be better to check directly. 
+• WORKSHOPS 
+    ◦ workshop status for each seat 
+    ◦ completed / pending / next steps 
+    ◦ next workshop - ENGI & Bellnox - #2
+    ◦ KKD - Workshop #1
+• PENDING SEATS 
+    ◦ names / designations 
+    ◦ setting up workshops
+• CHAR TRAINING 
+    ◦ characters to be trained for each of the studios
+• *NIHODO*
+    ◦ 3 characters coming in - check timeline
+    ◦ resolve issues with the zombies
+    ◦ 3-5 cuts (mostly just 3) - by end of june 
+    ◦ kush to explain char settei creation to deepak, deepak to do the work ",shruthi@ikhor.ai,2025-05-30,true,"Sales Updates",,,"5/28/25, 1:40 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"78nine - check in",Done,,"set up check in call with 78nine Yanagawa san
+• check status of MP usage
+• any character model feedback
+• give update about in-betweener access
+• reset expectations about the BG tool 
+• request data for clarification about model performance",shruthi@ikhor.ai,2025-06-20,true,Comms,,,"5/28/25, 1:37 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"session to cover in-betweening",Done,,"set up a session with the R&D team to share all the insights and information shared by Akita Tsumugi - Sakurai-san (need basis)",shruthi@ikhor.ai,2025-06-20,true,Projects,,,"5/28/25, 1:34 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"send out invoices - may",Done,,"invoices to be sent out to all signed seats
+• received all invoices from evee / hilary",shruthi@ikhor.ai,2025-05-30,true,"Client Services",,,"5/29/25, 1:06 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"send out invoices - june",Done,,"invoices to be sent out to all signed seats",shruthi@ikhor.ai,2025-06-25,true,"Client Services",,,"5/28/25, 1:34 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"b.bird - check status",Done,,"check in with ukai- san about
+• status of character data for training 
+• any thoughts on the pricing for clean up tool 
+• what is the final conclusion ",shruthi@ikhor.ai,2025-06-13,true,Comms,,,"5/28/25, 1:33 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"imagica + qzilla - suspend in-betweener access",Done,p1,"suspend access to beta version of auto in-betweener at the time of release of final product.",shruthi@ikhor.ai,2025-07-08,true,"Client Services",,,"5/28/25, 1:30 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"qzilla - check in",Done,,"check in with qzilla about the current usage
+• frequency of use / use cases assumed 
+• characters in use 
+• upcoming production plan / timeline / char 
+main goal is to push them to use MP more, suggest using MP in production cuts.
+• scheduling in progress - 06/11",shruthi@ikhor.ai,2025-06-16,true,Comms,,,"5/28/25, 1:30 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"qzilla - in-betweener",Done,,"• share the update about in-betweener (timeline of release, suspension of free beta access)",akira@ikhor.ai,2025-05-29,true,Comms,,,"5/28/25, 1:28 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"feedback tracking","In progress",p3,"update feedback tracker and share summary",shruthi@ikhor.ai,2025-09-17,false,Projects,,,"5/28/25, 1:51 PM","9/1/25, 10:57 AM",shruthi@ikhor.ai,
+"Limits - suspend account",Done,,"suspend Limits accounts (Ohyama + KTYM) since there is no seat usage or biz dev at the moment.",shruthi@ikhor.ai,2025-06-04,true,"Client Services",,,"5/28/25, 1:26 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"imagica infos - batch processing",Done,,"_imagica has agreed to give us a more detailed explanation of their requirement for the batch processing tool._
+we will be unable to accommodate any f/b at the moment, but we are interested in understanding the requirements",shruthi@ikhor.ai,2025-06-10,true,Comms,,,"5/29/25, 10:08 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"imagica infos - batch processing",Done,,"imagica has agreed to give us a more detailed explanation of their requirement for the batch processing tool.
+• do we want to spend time on this session? 
+• do we want to say no to this request?",shruthi@ikhor.ai,2025-05-29,true,Check,,,"5/28/25, 1:24 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"imagica infos - char train data",Done,,"get more context about the following
+• what kind of char data is coming in 
+• mix & match? iro-trace? 
+• production timeline, expected use of MP",shruthi@ikhor.ai,2025-06-10,true,Comms,,,"5/28/25, 1:22 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"production IG - follow up",Done,,"• Ko-san to share follow up with Production IG - MSA and ROI slides
+• tanifuji-san is already in conversation with them, and the reaction has been very positive",akira@ikhor.ai,2025-05-29,true,Comms,,,"5/28/25, 1:18 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"NHK x Nakamura-san - outreach",Done,,"*[BLOCKED] - nakamura-san is planning on quitting imagica, so need to evaluate other options.* 
+_reach out to nakamura-san to request her cooperation with the 10 min NHK segment_
+• _got a response, shared internally (05/30)_",shruthi@ikhor.ai,2025-06-04,true,Comms,,,"5/28/25, 1:15 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"share summary of imagica check in",Done,,"share a summary of the key takeaways from the bi-weekly check in with imagica infos + update the feedback tracker",shruthi@ikhor.ai,2025-06-10,true,"Sales Updates",,,"5/28/25, 1:14 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"japanese sales pitch decks",Done,,"prepare a version of the latest sales pitch decks with japanese text added.",satoshi@ikhor.ai,2025-06-24,true,Projects,,,"5/28/25, 1:13 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"update all the sales pitch decks",Done,p1,"update the files in the sales pitch deck directory with the latest decks
+• got the newer decks from evee (or Coco) 05/30",shruthi@ikhor.ai,2025-07-14,true,Projects,,,"5/28/25, 1:12 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"feedback tracking session",Done,,"set up feedback tracking session internally to check in on the feedback / bugs / feature requests shared by clients
+05/29 - revisit after getting more information
+06/05 - lower priority",shruthi@ikhor.ai,2025-06-20,true,Check,,,"5/28/25, 1:50 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 05/28",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-05-28,true,"Sales Updates",,,"5/28/25, 1:53 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 07/04",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-04,true,Tasks,,,"7/3/25, 8:07 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/16",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-16,true,"Sales Updates",,,"6/12/25, 9:07 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 07/03",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-03,true,Tasks,,,"7/2/25, 7:12 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 07/02",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-07-02,true,"Sales Updates",,,"7/2/25, 7:11 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/30",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-30,true,"Sales Updates",,,"6/27/25, 8:56 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/27",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-27,true,"Sales Updates",,,"6/26/25, 8:32 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/26",Done,p0,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-26,true,"Sales Updates",,,"6/25/25, 9:18 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/25",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-25,true,"Sales Updates",,,"6/24/25, 7:55 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/24",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-24,true,"Sales Updates",,,"6/19/25, 7:47 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/19",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-19,true,"Sales Updates",,,"6/19/25, 11:00 AM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/17",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-17,true,"Sales Updates",,,"6/16/25, 8:49 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/12",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-12,true,"Sales Updates",,,"6/11/25, 8:04 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 05/29",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-05-29,true,"Sales Updates",,,"5/28/25, 5:56 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/11",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-11,true,"Sales Updates",,,"6/11/25, 10:24 AM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/10",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-10,true,"Sales Updates",,,"6/9/25, 6:02 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/09",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-09,false,"Sales Updates",,,"8/18/25, 6:25 PM","8/18/25, 6:25 PM",shruthi@ikhor.ai,
+"character model training status - 06/09",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-09,true,"Sales Updates",,,"6/6/25, 9:59 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/06",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-06,true,"Sales Updates",,,"6/5/25, 7:52 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/05",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-05,true,"Sales Updates",,,"6/3/25, 9:17 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/03",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-03,true,"Sales Updates",,,"6/2/25, 5:35 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 06/02",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-06-02,true,"Sales Updates",,,"5/30/25, 3:31 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"character model training status - 05/30",Done,,"check character model training status and share with the team",shruthi@ikhor.ai,2025-05-30,true,"Sales Updates",,,"5/29/25, 8:27 PM","7/17/25, 8:07 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/05",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-05,true,"Sales Updates",,,"6/5/25, 7:47 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/09",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-09,true,"Sales Updates",,,"6/6/25, 6:26 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"ufo table - restart conversation",Done,p0,"Ko sent follow up on 07/17. waiting response",ko@ikhor.ai,2025-07-23,true,Comms,,,"6/26/25, 10:50 AM","7/24/25, 10:39 AM",shruthi@ikhor.ai,
+"Production IG - follow up",Done,,"Ko to follow up with Production IG week of June 9th if no reply.",ko@ikhor.ai,2025-06-13,true,"Sales Updates",,,"6/6/25, 7:01 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"change name for mushmush",Done,,"• check with kush to change the name 
+• share final name with adam ","shruthi@ikhor.ai, kush@ikhor.ai",2025-06-20,true,Check,,,"6/11/25, 3:19 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"update sales deck - 16 images",Done,,"update all sales pitch decks with latest count of images required for model training.","shruthi@ikhor.ai, akira@ikhor.ai",2025-06-18,true,Projects,,,"6/11/25, 10:22 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"LDH - schedule live demo",Done,,"schedule live demo for animators",shruthi@ikhor.ai,2025-06-09,true,Comms,,,"6/9/25, 8:08 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"build sales demo assets",Done,p1,"• assets for magic pen demo without kush 
+• assets for good outputs for in betweenings","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-21,true,Projects,,,"6/6/25, 7:38 PM","7/22/25, 7:18 PM",shruthi@ikhor.ai,
+"Kush working with Deepak on Nihodo stuff.",Done,,"• 06/11 - started working on first cut
+• 06/12 - Deepak to work on other cuts
+• next meeting on 06/17",kush@ikhor.ai,2025-06-26,true,"Sales Updates",,,"6/6/25, 7:04 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"UFOtable - follow up",Done,,"Ko to follow up with UFOTable mid-June if we haven't heard from them.",ko@ikhor.ai,2025-06-19,true,"Sales Updates",,,"6/6/25, 7:04 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"Dandelion - backchannel with Tanifuji",Done,,"Ko to ask Tanifuji to backchannel on June 5 - so we can get a better read on what DANDELION will be trying to evaluate during the demo.",ko@ikhor.ai,2025-06-11,true,"Sales Updates",,,"6/6/25, 7:03 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"Set up live demo with Hike. Separately asked for in-between test materials.",Done,,,shruthi@ikhor.ai,2025-06-11,true,"Sales Updates",,,"6/6/25, 7:03 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"Akita Tsumugi - partnership + delivery",Done,,"Ko to manage partnership conversation with Akita Tsumugi, plus next batch of work (cuts) week of June 9, following delivery of batch materials (slated for June 5).",ko@ikhor.ai,2025-06-30,true,"Sales Updates",,,"6/6/25, 7:02 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"Bandai Namco (Sunrise)","Re-Visit (Sep+)",p3,"Ko to schedule meeting with Bandai Namco (Sunrise)",ko@ikhor.ai,2025-09-04,false,"Sales Updates",,,"6/6/25, 7:00 AM","9/1/25, 10:58 AM",evee@ikhor.ai,
+"inbetweening QA test plan",Done,,"• prepare a test plan for the QA test for inbetweening
+• plan the test between JPSS team for this week","shruthi@ikhor.ai, akira@ikhor.ai",2025-06-19,true,Projects,,,"6/16/25, 6:28 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Bones - set up meeting","Re-Visit (Sep+)",p3,"Ko to network to meeting with Bones.",ko@ikhor.ai,2025-09-04,false,"Sales Updates",,,"6/6/25, 7:00 AM","9/1/25, 10:58 AM",evee@ikhor.ai,
+"Set up meeting with Pierrot",Done,p2,"Ko scheduling a meeting with Pierrot for late June/early July.",ko@ikhor.ai,2025-06-30,true,"Sales Updates",,,"6/6/25, 6:59 AM","8/5/25, 7:32 PM",evee@ikhor.ai,
+"reengage with MAPPA",Done,p2,"Ko to reach out to try and engage with MAPPA week of June 19th with in-between. Pending in-betweening slides.
+• follow up with Tanifuji on Monday 21 July
+• send out IB launch mail 21 July",ko@ikhor.ai,2025-07-21,true,Comms,,,"6/6/25, 6:58 AM","8/5/25, 7:32 PM",evee@ikhor.ai,
+"studio hibari - character training walkthrough",Done,,"Aki to reach out to Hibari about setting up a live walkthrough of character training and mention we're just about to release and update version of the requirements on June 5th.",akira@ikhor.ai,2025-06-17,true,"Sales Updates",,,"6/6/25, 6:57 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"public preview - notice",Done,p1,"send public preview notice to all studios for the latest release","shruthi@ikhor.ai, akira@ikhor.ai",2025-08-27,false,Projects,,,"7/29/25, 4:04 PM","9/1/25, 10:57 AM",shruthi@ikhor.ai,
+"public preview - notice",Done,p1,"send public preview notice to all studios for the latest release","shruthi@ikhor.ai, akira@ikhor.ai",2025-07-29,true,Projects,,,"6/10/25, 4:20 PM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"public preview - notice",Done,,"send public preview notice to all studios for the latest release","shruthi@ikhor.ai, akira@ikhor.ai",2025-06-10,true,Projects,,,"6/6/25, 6:57 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"studio Hibari - inbetween cuts",Done,,"Jackson to process test in-between cuts received June 5 for delivery back to Hibari.",jackson@ikhor.ai,2025-06-20,true,"Sales Updates",,,"6/6/25, 6:56 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"OLM digital - follow up",Done,,"Ko to follow up week of June 9 with OLM if no reply to last follow-up.",ko@ikhor.ai,2025-06-13,true,"Sales Updates",,,"6/6/25, 6:56 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"nakamura - NHK request",Done,,"• she has agreed to the request, we need to schedule the next discussion where we can discuss and work out the details",shruthi@ikhor.ai,2025-06-20,true,Comms,,,"6/16/25, 5:31 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"complete review magic pen JP labels","Not started",p2,"there are some inconsistencies in the japanese label names - need to update them","shruthi@ikhor.ai, satoshi@ikhor.ai, akira@ikhor.ai",2025-09-10,false,Projects,,,"6/17/25, 2:12 PM","8/22/25, 11:55 AM",shruthi@ikhor.ai,
+"Nihon Kougakuin seminar + meeting with Hamano",Done,p0,"Ko to set up seminar with Nihon Kougakuin late June/early July plus meeting with Hamano.",ko@ikhor.ai,2025-07-22,true,"Sales Updates",,,"6/6/25, 6:55 AM","7/18/25, 5:17 PM",evee@ikhor.ai,
+"EgoOne - response",Done,,"• respond to Yoshida-san's email 
+    ◦ online meeting to explain 3D > 2D MP
+    ◦ also introduce auto-inbetweener ",shruthi@ikhor.ai,2025-06-25,true,Comms,,,"6/24/25, 7:02 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Nihodo - check in with kush",Done,p0,"• check about the cuts status / the hold up 
+• what is happening with the slack channel?!","shruthi@ikhor.ai, kush@ikhor.ai",2025-06-27,true,"Sales Updates",,,"6/26/25, 10:42 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Kadokawa - MoU follow up",Done,p0,"• follow up on MoU 
+• probably a zoom call with Tamura san included
+• also check in on the Nihodo slack channel",ko@ikhor.ai,2025-07-31,true,"Sales Updates",,,"6/26/25, 10:38 AM","8/5/25, 7:32 PM",shruthi@ikhor.ai,
+"LDH - live demo set up",Done,p0,"• set up live demo for their animators",shruthi@ikhor.ai,2025-06-30,true,Comms,,,"6/26/25, 10:37 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"EgoOne - demo set up",Done,p0,"• set up in-between demo / 3D > 2D",shruthi@ikhor.ai,2025-06-30,true,Comms,,,"6/26/25, 10:36 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"imagica - response to Li",Done,p0,"• share response to points shared by imagica 
+    ◦ testing of character model 
+    ◦ preparation of 2GEN data 
+    ◦ switching off 2 factor auth for account",shruthi@ikhor.ai,2025-06-25,true,Comms,,,"6/25/25, 10:01 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"in-betweener guidelines",Done,,"• use the hibari guidelines to prepare a sanitized version of the in-betweener guidelines that can be shared with other studios","akira@ikhor.ai, shruthi@ikhor.ai",2025-06-26,true,Projects,,,"6/25/25, 10:00 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"LDH - schedule live demo",Done,,"• schedule live demo for 07/03 13:30",shruthi@ikhor.ai,2025-06-25,true,Comms,,,"6/25/25, 9:58 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"akita tsumugi - share follow up",Done,,"• share follow up with sakurai-san
+    ◦ timeline of release is finalized 
+    ◦ we can start as early as first week of july 
+    ◦ ask them to share the details once they have identified the admin team member who will be using the tool so that we can 
+        ▪︎ create account 
+        ▪︎ prepare time to and resources to explain the features and how to use",shruthi@ikhor.ai,2025-06-25,true,Comms,,,"6/25/25, 2:21 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"share inbetweener pricing",Done,p1,"• share in-betweener pricing and timeline with 
+    ◦ imagica 
+    ◦ qzilla 
+    ◦ 78nine",shruthi@ikhor.ai,2025-07-08,true,"Client Services",,,"6/24/25, 7:05 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"qzilla - check in on project",Done,p2,"• check with Hasegawa-san if there is any ongoing production work in progress",shruthi@ikhor.ai,2025-07-09,true,Comms,,,"6/24/25, 7:01 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"EgoOne - in betweening",Done,,"• data conditions for in betweening 
+• CC yoshida san 
+• Magic Pen - 3D > 2D is possible or not 
+    ◦ more aggressive movements Genga 
+    ◦ making the movement in 3D, then tracing to 2D - how to use magic pen here 
+    ◦ for this - share the possible way of working with magic pen > do the video in 3D, then run through magic pen as sequencing in images ","shruthi@ikhor.ai, akira@ikhor.ai",2025-06-19,true,Comms,,,"6/17/25, 5:13 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"imagica infos - feedback email",Done,,"• share feedback with imagica on the character trainings requested despite insufficient data
+• get reviewed by Coco and Todd",shruthi@ikhor.ai,2025-06-24,true,Comms,,,"6/24/25, 1:37 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Brilliant Pictures - follow up",Done,,"Anj to follow up with Brilliant Pictures",anj@ikhor.ai,2025-06-25,true,"Sales Updates",,,"6/20/25, 7:22 PM","7/17/25, 8:08 PM",anj@ikhor.ai,
+"MIXI - follow up for seats",Done,p2,"Follow- up to see if they'd like to take seats for posters and marketing assets - Ko to work with Satoshi to send response 19 June
+• follow up sent on 19, waiting on response
+• Ko to follow up with Shibata-san 
+• Satoshi to follow up with Yang-san","ko@ikhor.ai, satoshi@ikhor.ai, akira@ikhor.ai",2025-07-11,true,Comms,,,"6/19/25, 11:06 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Dandelion - MP deck in prep",Done,,"Preparing deck for Dandelion - by 20th June",todd@ikhor.ai,2025-06-25,true,"Sales Updates",,,"6/19/25, 11:05 AM","6/26/25, 11:59 AM",shruthi@ikhor.ai,
+"Hike - follow up",Done,,"Ko to follow up 19th June",ko@ikhor.ai,2025-06-19,true,"Sales Updates",,,"6/19/25, 11:05 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Akita Tsumugi - cuts status",Done,,"Todd setting up meeting for early next week: Business and product discusion",todd@ikhor.ai,2025-06-26,true,"Sales Updates",,,"6/19/25, 10:58 AM","6/26/25, 11:59 AM",shruthi@ikhor.ai,
+"Nippon Animation - follow up",Done,p0,"Ko to follow up 19 June - seat and inbetween test (follow up if no response)
+(07/18) share in-betweener announcement",ko@ikhor.ai,2025-07-21,true,Comms,,,"6/19/25, 10:57 AM","7/24/25, 10:39 AM",shruthi@ikhor.ai,
+"KADOKAWA - draft response",Done,,"• Ko san to work with Coco / Todd to draft a response to the feedback email","ko@ikhor.ai, coco@ikhor.ai, todd@ikhor.ai",2025-06-20,true,"Sales Updates",,,"6/19/25, 10:55 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Launch Box",Done,,"• share MSA for one seat + flow of next steps 
+• also share the requirements for the in betweening testing (3~4 cuts max)","shruthi@ikhor.ai, akira@ikhor.ai",2025-06-19,true,Comms,,,"6/17/25, 5:13 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Square Enix - next steps discussion",Done,,"Ko to set up next meeting with Square Enix towards month end to discuss potential areas where we could co-develop workflows for their game development (perhaps push sketch to mesh as starting point).",ko@ikhor.ai,2025-06-30,true,"Sales Updates",,,"6/6/25, 6:56 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"La Meduse Violette - backchannel",Done,,"La Meduse Violette: Hilary to backchannel to see why Marc was picked/what exactly he's evaluating.",hilary@ikhor.ai,2025-07-04,true,"Sales Updates",,,"6/6/25, 6:55 AM","7/7/25, 7:04 PM",evee@ikhor.ai,
+"KADOKAWA - ongoing 06/10",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-10,true,"Sales Updates",,,"6/9/25, 6:41 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"review magic pen usage report",Done,,"review the weekly magic pen report
+• imagica infos, ego one and other studios have had zero usage, which is concerning",shruthi@ikhor.ai,2025-06-03,true,Projects,,,"6/2/25, 12:52 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Frontier Works - follow up",Done,,"Ko follow up with Frontier Works.",ko@ikhor.ai,2025-06-18,true,"Sales Updates",,,"6/6/25, 6:40 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"kadokawa - invoice correction",Done,,"share updated invoice once received from evee",shruthi@ikhor.ai,2025-06-06,true,Comms,,,"6/5/25, 7:56 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"78nine - model improvement",Done,,"• what kind of data would be more efficient for us to improve the performance of the character model 
+• do we need to listen to their intent/goal first, and then adjust the expectation of what data would be most appropriate for that need 
+• can we have some standard procedures in place for this if this is a common occurrence 
+• do we need to set a different timeline for these requests, as compared to new character model requests - do we need more time? any monthly limits that we need to set in place considering kytra's workload. 
+",shruthi@ikhor.ai,2025-06-05,true,Check,,,"6/5/25, 2:45 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"born digital - live demo",Done,p1,"• schedule live demo for born digital ",shruthi@ikhor.ai,2025-07-03,true,Comms,,,"6/4/25, 8:59 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"studio hibari - follow up",Done,,"• share MSA + order form + ROI slides",shruthi@ikhor.ai,2025-06-04,true,Comms,,,"6/3/25, 9:15 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"LDH x verbal - follow up",Done,,"share follow up with LDH x Verbal
+• set up next live demo session for the animators",shruthi@ikhor.ai,2025-06-02,true,Comms,,,"6/2/25, 4:16 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"imagica - NHK request",Done,,"since nakamura-san is leaving imagica, check if anyone else on the team would be interested in cooperating with the NHK segment
+• meeting set up for 6/10 16:00",shruthi@ikhor.ai,2025-06-13,true,Comms,,,"6/2/25, 2:16 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"review magic pen usage report - 06/16",Done,,"review the weekly magic pen report
+• imagica infos, ego one and other studios have had zero usage, which is concerning",shruthi@ikhor.ai,2025-06-17,true,Projects,,,"6/11/25, 10:21 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"review magic pen usage report - 06/09",Done,,"review the weekly magic pen report
+• imagica infos, ego one and other studios have had zero usage, which is concerning",shruthi@ikhor.ai,2025-06-10,true,Projects,,,"6/3/25, 9:15 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"b.bird - 3 new characters",Done,,"• received 3 new characters on 05/30
+• data is not in template, has shadow, etc. 
+• 06/02 - responded, requesting corrections
+• 06/09 - more corrections required, responded
+• 06/13 - received corrected data",shruthi@ikhor.ai,2025-06-16,true,Comms,,,"6/2/25, 11:38 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"Mayflower - follow up","Not started",p3,"Coco follow up a final time with Mayflower.",coco@ikhor.ai,2025-07-02,false,"Sales Updates",,,"6/6/25, 6:41 AM","8/28/25, 4:36 PM",evee@ikhor.ai,
+"kadokawa - share invoice",Done,,"share invoice with yamashita-san",shruthi@ikhor.ai,2025-06-02,true,Comms,,,"6/2/25, 11:36 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"akita tsumugi - share questions from Coco",Done,,"• shared the questions about the current inbetweening process (05/30)
+• waiting on response from sakurai & team",shruthi@ikhor.ai,2025-06-03,true,Comms,,,"6/2/25, 11:41 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"akita tsumugi - share questions from Coco",Done,,"• shared the questions about the current inbetweening process",shruthi@ikhor.ai,2025-05-30,true,Comms,,,"5/30/25, 7:13 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/20",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. 
+• _*Satoshi to check the number of hours worked on drawing by Deepak*_ ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-20,true,"Sales Updates",,,"6/19/25, 7:47 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/19",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. 
+• _*Satoshi to check the number of hours worked on drawing by Deepak*_ ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-19,true,"Sales Updates",,,"6/18/25, 6:22 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/18",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. 
+• _*Satoshi to check the number of hours worked on drawing by Deepak*_ ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-18,true,"Sales Updates",,,"6/17/25, 11:59 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/17",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. 
+• _*Satoshi to check the number of hours worked on drawing by Deepak*_ ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-17,true,"Sales Updates",,,"6/12/25, 9:07 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/12",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-12,true,"Sales Updates",,,"6/11/25, 8:04 PM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"KADOKAWA - ongoing 06/11",Done,,"update canvas with latest details -
+• account creation / workshop scheduling
+• character training  
+• other : comms / slack set up / feedback /etc. ","satoshi@ikhor.ai, shruthi@ikhor.ai",2025-06-11,true,"Sales Updates",,,"6/11/25, 10:24 AM","7/17/25, 8:08 PM",shruthi@ikhor.ai,
+"GREE entertainment - NDA",Done,,"Aki follow up on Gree (Eiji Araki) NDA.",akira@ikhor.ai,2025-06-18,true,"Sales Updates",,,"6/6/25, 6:41 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"EgoOne - follow up with Hibino",Done,,"Ko catch up with Hibino-san on the phone to understand why seat not being used and next steps.",ko@ikhor.ai,2025-06-20,true,"Sales Updates",,,"6/6/25, 6:42 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"La Meduse Violette: Marc’s WS#2","In progress",p0,"La Meduse Violette: Schedule Marc's first training session (will be after 26th). Hilary to follow up and schedule next training session.",hilary@ikhor.ai,2025-07-25,false,"Sales Updates",,,"6/6/25, 6:54 AM","8/21/25, 4:14 PM",evee@ikhor.ai,
+"Simpsons - follow up",Done,p2,"Hilary follow up with Simpsons guy week of June 9th (or after Coco meet?)",hilary@ikhor.ai,2025-06-18,true,"Sales Updates",,,"6/6/25, 6:49 AM","7/22/25, 7:18 PM",evee@ikhor.ai,
+"La Meduse Violette - masterclass opp",Done,,"Coco to send info regarding a masterclass opportunity (La Meduse Violette).",coco@ikhor.ai,2025-06-30,true,"Sales Updates",,,"6/6/25, 6:54 AM","6/27/25, 5:13 PM",evee@ikhor.ai,
+"NBC/Universal Dreamworks - next steps",Done,p0,"Hilary to determine next steps for NBC/Universal Dreamworks.",hilary@ikhor.ai,2025-06-18,true,"Sales Updates",,,"6/6/25, 6:53 AM","7/24/25, 10:39 AM",evee@ikhor.ai,
+"Asteria - follow up",Done,,"Hilary to follow up with Asteria week of June 2nd.",hilary@ikhor.ai,2025-06-13,true,"Sales Updates",,,"6/6/25, 6:53 AM","7/7/25, 7:04 PM",evee@ikhor.ai,
+"Final Bosu - follow up",Done,,"Hilary to check in with Final Bosu week of June 2nd.",hilary@ikhor.ai,2025-06-18,true,"Sales Updates",,,"6/6/25, 6:52 AM","7/7/25, 7:04 PM",evee@ikhor.ai,
+"Deep Voodoo - follow up with Brian to share Joao completed sequence","Not started",p1,"Deep Voodoo has requested a sample they can share with prospective partners.  need pantherbot fight scene plus kush cuts. ",todd@ikhor.ai,2025-09-17,false,"Sales Updates",,,"6/6/25, 6:52 AM","8/21/25, 4:24 PM",evee@ikhor.ai,
+"Pete Williams (UNDERGRADS) - follow up",Done,,"Hilary to check in week of June 16th with Pete Williams (UNDERGRADS)",hilary@ikhor.ai,2025-06-20,true,"Sales Updates",,,"6/6/25, 6:51 AM","7/7/25, 7:04 PM",evee@ikhor.ai,
+"Baobab (Maureen) - next steps",Done,p1,"Hilary to determine next steps for Baobab (Maureen).",hilary@ikhor.ai,2025-06-17,true,"Sales Updates",,,"6/6/25, 6:51 AM","7/22/25, 7:18 PM",evee@ikhor.ai,
+"Kuku - next steps",Done,p0,"Hilary to determine next steps for Kuku.",hilary@ikhor.ai,2025-06-17,true,"Sales Updates",,,"6/6/25, 6:51 AM","7/22/25, 7:18 PM",evee@ikhor.ai,
+"Bento Box - follow up",Done,p3,"Hilary follow up with Bento Box week of June 9th (or after Coco meet?)",hilary@ikhor.ai,2025-06-13,false,"Sales Updates",,,"6/6/25, 6:50 AM","8/28/25, 4:36 PM",evee@ikhor.ai,
+"Moe NDA - follow up",Done,,"Aki follow up on CafeGroup: Moe NDA if not yet executed.",akira@ikhor.ai,2025-06-13,true,"Sales Updates",,,"6/6/25, 6:49 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"Seven Arcs to set up training in july.",Done,p3,"Follow up when 7arcs task completed.",ko@ikhor.ai,2025-07-23,true,"Sales Updates",,,"6/6/25, 6:43 AM","7/18/25, 5:17 PM",evee@ikhor.ai,
+"UNNAMED Thai Production - check with Kush",Done,p3,"Shru to see if she can find the right email for UNNAMED Thai Production company by speaking with Kush.",shruthi@ikhor.ai,2025-07-01,true,"Sales Updates",,,"6/6/25, 6:48 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"AKA - follow up",Done,,"Todd follow up with AKA week of June 16th to check in.",todd@ikhor.ai,2025-06-27,true,"Sales Updates",,,"6/6/25, 6:47 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"Creative Freaks - follow up",Done,p1,"Coco follow up with Creative Freaks week of June 9th if we haven't got a response to our latest proposal back to them.",coco@ikhor.ai,2025-06-30,false,"Sales Updates",,,"6/6/25, 6:47 AM","8/28/25, 4:36 PM",evee@ikhor.ai,
+"Andraft/Chainsaw Man - inbetweener",Done,p3,"Ko send in-betweener deck to Andraft/Chainsaw Man when ready.",ko@ikhor.ai,2025-06-30,false,"Sales Updates",,,"6/6/25, 6:46 AM","9/1/25, 10:58 AM",evee@ikhor.ai,
+"Annecy x Brilliant Pictures (Taiwan)",Done,,"Anj to work with Coco to see if Annecy meet with Brilliant Pictures (Taiwan) is possible.","coco@ikhor.ai, anj@ikhor.ai",2025-06-09,true,"Sales Updates",,,"6/6/25, 6:46 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"Seven Arcs - set up demo / follow up","Pending Reponse",p0,"Lock in date for early July demo for Seven Arcs. Waiting for dates in July.",ko@ikhor.ai,2025-07-23,false,"Sales Updates",,,"6/6/25, 6:45 AM","7/24/25, 4:39 PM",evee@ikhor.ai,
+"MNC Animation - follow up","Re-Visit (Sep+)",p3,"Ko follow up with MNC Animation week of June 2 if haven't already.",ko@ikhor.ai,2025-06-13,false,"Sales Updates",,,"6/6/25, 6:44 AM","8/4/25, 4:18 PM",evee@ikhor.ai,
+"Ko arrange a live demo with Launch Box.",Done,,,ko@ikhor.ai,2025-06-03,true,"Client Services",,,"6/6/25, 6:44 AM","7/17/25, 8:08 PM",evee@ikhor.ai,
+"Synergy SP - follow up",Done,p3,"Ko to follow up with Synergy SP if we haven't heard back week of June 16th.",ko@ikhor.ai,2025-06-20,true,"Sales Updates",,,"6/6/25, 6:43 AM","7/18/25, 5:17 PM",evee@ikhor.ai,
+"marza - share response","Not started",p1,"• share the response to the questionnaire 
+• share the primadonna deck 
+• schedule next demo session (primadonna)",shruthi@ikhor.ai,2025-09-10,false,Comms,,,"9/3/25, 4:36 PM","9/3/25, 4:37 PM",shruthi@ikhor.ai,

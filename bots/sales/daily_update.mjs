@@ -7,14 +7,22 @@ import { getSalesConfig } from "./config.mjs";
 dotenv.config();
 
 const PRIORITY_ORDER = { P0: 0, P1: 1, P2: 2, P3: 3, P4: 4, None: 99 };
-const PRIORITY_OPTIONS_MAP = { "Opt0183CXDH": "P0", "Opt4GBWBKZB": "P1", "OptGESIX7LE": "P2", "Opt24AKKH4V": "P3" };
-const STATUS_OPTIONS = {
-  "Opt2AUH34OG": "ToDo",
-  "Opt62NHHN5C": "ToDo",
-  "OptHSJVP60E": "In Progress",
-  "OptHX1KN4IP": "Deprecated",
-  "OptZHYHCA4A": "Backlog",
-  "Opt38B8RWRR": "Complete",
+
+// Sales field mappings (from export cross-reference)
+const SALES_STATUS_MAP = {
+  OptTR35W8NA: "Done",
+  Opt7MNHB19N: "Not started",
+  OptXBPNOYKC: "In progress",
+  OptZHAUQFJX: "Delayed",
+  OptFRBZND04: "Pending Response",
+  OptX4J6I8OQ: "Re-Visit (Sep+)",
+};
+
+const SALES_PRIORITY_MAP = {
+  OptLB9I51KK: "P0",
+  OptYBKVVSJL: "P1",
+  OptKUQNIOIF: "P2",
+  OptLYP9IY01: "P3",
 };
 
 function parseListItem(item, listId) {
@@ -22,51 +30,36 @@ function parseListItem(item, listId) {
   let title = "Untitled";
   let assigneeId = null;
   let due = null;
-  let isCompleted = false;
   let priority = "None";
   let status = "Unknown";
 
   fieldsArray.forEach((field) => {
-    if (field.key === "todo_assignee" && field.user && field.user.length > 0) assigneeId = field.user[0];
-    if ((field.key === "name" || field.key === "title") && field.text) title = field.text;
-    if (field.key === "todo_due_date" && field.value) due = field.value;
-    if (field.key === "todo_completed") isCompleted = field.value === true;
-    if (field.key === "Col093T8A25LG" && field.value) status = STATUS_OPTIONS[field.value] || "Unknown";
-    if (field.key === "Col08V4T02P5Y" && field.value) {
-      const mapped = PRIORITY_OPTIONS_MAP[field.value];
-      if (mapped) priority = mapped;
-    }
+    if (field.key === "name" && field.text) title = field.text;
+    if (field.key === "Col07R4NKTN3B" && field.user && field.user.length > 0) assigneeId = field.user[0];
+    if (field.key === "Col07QUHA36DS" && field.value) due = field.value; // YYYY-MM-DD
+    if (field.key === "people" && field.value) status = SALES_STATUS_MAP[field.value] || "Unknown";
+    if (field.key === "date" && field.value) priority = SALES_PRIORITY_MAP[field.value] || "None";
   });
-  const priorityMatch = title.match(/\b[Pp]([0-4])\b/);
+
+  // Fallback: title prefix like p0/p1 if present
+  const priorityMatch = title.match(/\b[Pp]([0-3])\b/);
   if (priorityMatch) {
     priority = "P" + priorityMatch[1];
-    title = title.replace(/^\s*[Pp][0-4]\s*:?\s*/, "");
+    title = title.replace(/^\s*[Pp][0-3]\s*:?\s*/, "");
   }
+
   const teamId = "T06K7221F6C";
   const permalink = `https://ikhorlabs.slack.com/lists/${teamId}/${listId}?record_id=${item.id}`;
-  return { id: item.id, title, assigneeId, priority, due, status, permalink, isCompleted };
+  return { id: item.id, title, assigneeId, priority, due, status, permalink };
 }
 
 function filterRelevantItems(items) {
+  // Only not started / in progress with priority P0-P3
   return items.filter((item) => {
-    const validStatus = item.status === "ToDo" || item.status === "In Progress";
+    const validStatus = item.status === "Not started" || item.status === "In progress";
     const validPriority = item.priority === "P0" || item.priority === "P1" || item.priority === "P2" || item.priority === "P3";
     return validStatus && validPriority;
   });
-}
-
-function groupByAssignee(items) {
-  const grouped = {};
-  items.forEach((item) => {
-    if (!item.assigneeId) return;
-    if (item.priority !== "P0" && item.priority !== "P1" && item.priority !== "P2" && item.priority !== "P3") return;
-    if (!grouped[item.assigneeId]) grouped[item.assigneeId] = [];
-    grouped[item.assigneeId].push(item);
-  });
-  Object.keys(grouped).forEach((assignee) => {
-    grouped[assignee].sort((a, b) => (PRIORITY_ORDER[a.priority] ?? 99) - (PRIORITY_ORDER[b.priority] ?? 99));
-  });
-  return grouped;
 }
 
 function findUrgentItems(items, tz) {
@@ -75,7 +68,6 @@ function findUrgentItems(items, tz) {
   const overdue = [];
   items.forEach((item) => {
     if (!item.due) return;
-    if (item.status !== "ToDo" && item.status !== "In Progress") return;
     const dueDate = dayjs(item.due).tz(tz).startOf("day");
     if (dueDate.isBefore(now)) {
       overdue.push(item);
@@ -94,7 +86,7 @@ async function fetchListItems(slack, listId) {
       return [];
     }
     console.log(`Fetching items from list ${listId}...`);
-    const response = await slack.apiCall("slackLists.items.list", { list_id: listId, limit: 200 });
+    const response = await slack.apiCall("slackLists.items.list", { list_id: listId, limit: 400 });
     if (!response.ok) {
       console.error("Failed to fetch list:", response.error);
       return [];
@@ -106,66 +98,37 @@ async function fetchListItems(slack, listId) {
   }
 }
 
-async function resolveAssigneeIds(slack, emails, fallbackMap) {
-  const resolved = {};
-  for (const email of emails) {
-    if (fallbackMap[email]) resolved[email] = fallbackMap[email];
-    try {
-      const resp = await slack.users.lookupByEmail({ email });
-      if (resp && resp.ok && resp.user && resp.user.id) resolved[email] = resp.user.id;
-    } catch (_) {}
-  }
-  return resolved;
-}
-
-async function buildDigestBlocks(items, allItems, assigneeIdMap, tz, keyAssignees, emailToSlackId) {
-  const relevantItems = filterRelevantItems(items);
-  const groupedByAssignee = groupByAssignee(relevantItems);
-  const priorityItems = allItems.filter(
-    (item) =>
-      (item.priority === "P0" || item.priority === "P1" || item.priority === "P2" || item.priority === "P3") &&
-      (item.status === "ToDo" || item.status === "In Progress")
-  );
-  const { urgent, overdue } = findUrgentItems(priorityItems, tz);
+async function buildDigestBlocks(items, tz) {
+  const relevant = filterRelevantItems(items);
+  const { urgent, overdue } = findUrgentItems(relevant, tz);
 
   const blocks = [
-    { type: "header", text: { type: "plain_text", text: "💙💼 Sales Chan - Daily Update 💼💙", emoji: true } },
+    { type: "header", text: { type: "plain_text", text: "📞💓♠️ Sales Chan - Daily Update ♠️💓📞", emoji: true } },
     { type: "divider" },
   ];
+
   if (overdue.length > 0) {
     blocks.push({ type: "section", text: { type: "mrkdwn", text: `💢 *OVERDUE ITEMS REQUIRING IMMEDIATE ATTENTION* 💢` } });
     overdue.forEach((item) => {
-      const assigneeMention = item.assigneeId ? `<@${item.assigneeId}>` : "Unassigned";
-      blocks.push({ type: "section", text: { type: "mrkdwn", text: `• ❤️ ${assigneeMention} <${item.permalink}|${item.title}> | ${item.priority}` } });
+      const mention = item.assigneeId ? `<@${item.assigneeId}>` : "Unassigned";
+      blocks.push({ type: "section", text: { type: "mrkdwn", text: `• ❤️ ${mention} <${item.permalink}|${item.title}> | ${item.priority}` } });
     });
     blocks.push({ type: "divider" });
   }
+
   if (urgent.length > 0) {
     blocks.push({ type: "section", text: { type: "mrkdwn", text: `⏰ Items Due Soon (Next 2 Days)` } });
     urgent.forEach((item) => {
-      const assigneeMention = item.assigneeId ? `<@${item.assigneeId}>` : "Unassigned";
-      const dueText = item.daysUntil === 0 ? " (Due today)" : " (Due tomorrow)";
-      blocks.push({ type: "section", text: { type: "mrkdwn", text: `• 🧡 ${assigneeMention} <${item.permalink}|${item.title}> | ${item.priority}${dueText}` } });
+      const mention = item.assigneeId ? `<@${item.assigneeId}>` : "Unassigned";
+      blocks.push({ type: "section", text: { type: "mrkdwn", text: `• 🧡 ${mention} <${item.permalink}|${item.title}> | ${item.priority}` } });
     });
-    blocks.push({ type: "divider" });
   }
-  blocks.push({ type: "section", text: { type: "mrkdwn", text: `📋 Top Priorities for the Day` } });
-  (keyAssignees || []).forEach((email) => {
-    const slackId = assigneeIdMap[email] || emailToSlackId[email];
-    const userItems = slackId ? groupedByAssignee[slackId] : undefined;
-    const mention = slackId ? `<@${slackId}>` : `@${email.split("@")[0]}`;
-    if (!userItems || userItems.length === 0) {
-      blocks.push({ type: "section", text: { type: "mrkdwn", text: `${mention}:\nNo items left To Do` } });
-    } else {
-      const topItem = userItems[0];
-      blocks.push({ type: "section", text: { type: "mrkdwn", text: `${mention}:\n✅ Top Priority: <${topItem.permalink}|${topItem.title}> | ${topItem.priority}` } });
-    }
-  });
+
   return blocks;
 }
 
 export async function run() {
-  const { token, channel, listId, timezone: tz, keyAssignees, emailToSlackId } = getSalesConfig();
+  const { token, channel, listId, timezone: tz, dmRecipients, emailToSlackId } = getSalesConfig();
   if (!token || !channel) {
     console.error("Missing bot token or channel for Sales bot");
     process.exit(1);
@@ -173,16 +136,72 @@ export async function run() {
   const slack = createClient(token);
   try {
     console.log("Starting Sales Chan daily update...");
-    const items = await fetchListItems(slack, listId);
-    if (items.length === 0) {
-      console.log("No items found in list");
+    const raw = await fetchListItems(slack, listId);
+    if (raw.length === 0) {
+      console.log("No items found in sales list");
       await slack.chat.postMessage({ channel, text: "No items found in the sales list today." });
       return;
     }
-    const parsedItems = items.map((i) => parseListItem(i, listId));
-    const assigneeIdMap = await resolveAssigneeIds(slack, keyAssignees || [], emailToSlackId);
-    const blocks = await buildDigestBlocks(parsedItems, parsedItems, assigneeIdMap, tz, keyAssignees || [], emailToSlackId);
-    await slack.chat.postMessage({ channel, text: "Sales Chan - Daily Update", blocks });
+    const parsed = raw.map((it) => parseListItem(it, listId));
+    const blocks = await buildDigestBlocks(parsed, tz);
+
+    // Debug preview
+    console.log("\n=== SALES MESSAGE PREVIEW ===");
+    blocks.forEach((b, i) => {
+      if (b.type === "header") console.log(`[${i}] Header: ${b.text.text}`);
+      if (b.type === "section") console.log(`[${i}] Section: ${b.text.text}`);
+      if (b.type === "divider") console.log(`[${i}] --- Divider ---`);
+    });
+    console.log("=== END PREVIEW ===\n");
+
+    // Send GROUP DM to specified recipients instead of posting to channel
+    if (dmRecipients && dmRecipients.length > 0) {
+      console.log(`Creating group DM for: ${dmRecipients.join(", ")}`);
+      
+      // Resolve recipient IDs by email
+      const recipientIds = [];
+      for (const email of dmRecipients) {
+        if (emailToSlackId[email]) { 
+          recipientIds.push(emailToSlackId[email]); 
+          console.log(`Found ID for ${email}: ${emailToSlackId[email]}`);
+          continue; 
+        }
+        try {
+          const resp = await slack.users.lookupByEmail({ email });
+          if (resp?.ok && resp.user?.id) {
+            recipientIds.push(resp.user.id);
+            console.log(`Looked up ID for ${email}: ${resp.user.id}`);
+          }
+        } catch (e) {
+          console.error(`Failed to lookup ${email}:`, e.message);
+        }
+      }
+      
+      // Create or open a group DM with all recipients
+      const uniqueIds = [...new Set(recipientIds)].filter(Boolean);
+      if (uniqueIds.length > 0) {
+        try {
+          // Open a multi-person DM (MPIM) with all recipients
+          const dmResp = await slack.conversations.open({ users: uniqueIds.join(",") });
+          if (dmResp?.ok && dmResp.channel?.id) {
+            await slack.chat.postMessage({ 
+              channel: dmResp.channel.id, 
+              text: "Sales Chan - Daily Update", 
+              blocks 
+            });
+            console.log(`✅ Sent group DM to ${uniqueIds.length} recipients`);
+          } else {
+            console.error("Failed to open group DM:", dmResp);
+          }
+        } catch (e) {
+          console.error(`Failed to send group DM:`, e.message);
+        }
+      } else {
+        console.warn("No valid recipient IDs found");
+      }
+    } else {
+      console.warn("No DM recipients configured, skipping DM send");
+    }
     console.log("Successfully posted sales daily update");
   } catch (error) {
     console.error("Failed to run sales daily update:", error);
@@ -201,4 +220,3 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(1);
   });
 }
-

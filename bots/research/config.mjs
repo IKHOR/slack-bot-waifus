@@ -5,7 +5,7 @@ export function getResearchConfig() {
   const token = process.env.RESEARCH_BOT_TOKEN;
   const channel = process.env.RESEARCH_CHANNEL_ID;
   const listId = process.env.RESEARCH_LIST_ID;
-  const timezone = process.env.RESEARCH_TIMEZONE || process.env.TIMEZONE || "Asia/Tokyo";
+  const timezone = process.env.TIMEZONE || "Asia/Tokyo";
   const signingSecret = process.env.RESEARCH_SIGNING_SECRET;
 
   // Comma-separated list of emails, or default list

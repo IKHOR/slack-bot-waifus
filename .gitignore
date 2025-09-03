@@ -34,3 +34,4 @@ debug-*.mjs
 # Build
 dist/
 build/
+data/

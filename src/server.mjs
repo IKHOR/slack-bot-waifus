@@ -71,15 +71,6 @@ if (sales.token) {
   console.warn("Sales bot token not set; skipping /slack/sales route");
 }
 
-// TEMPORARY: Legacy route for backward compatibility
-// Remove this once Slack Event Subscriptions are updated
-if (research.token) {
-  const researchSlack = createClient(research.token);
-  const researchHelp = "Hi! I'm Research Chan :green_heart::test_tube::sparkles:: I provide daily priority updates for the R&D team.";
-  app.use("/slack/events", slackSignatureVerifier(research.signingSecret), createResearchEventsRouter({ slack: researchSlack, helpMessage: researchHelp }));
-  console.log("TEMPORARY: Also mounted Research bot at /slack/events for backward compatibility");
-}
-
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });

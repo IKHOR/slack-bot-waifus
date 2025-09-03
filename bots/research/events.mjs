@@ -58,6 +58,22 @@ export function createResearchEventsRouter({ slack, helpMessage }) {
     "Opt24AKKH4V": "P3",
   };
   const PRIORITY_ORDER = { P0: 0, P1: 1, P2: 2, P3: 3, P4: 4, None: 99 };
+  
+  // User ID to name mapping
+  const USER_NAMES = {
+    "U06L088EW7K": "Joao",
+    "U06K8F0F1RC": "Kytra",
+    "U09BTLXG89G": "Ryo",
+    "U06KJLR4GBF": "Jackson",
+    "U06LABYK33J": "Khai",
+    "U0798RS2ESX": "Kijai",
+    "U079Z6D4YFJ": "Todd",
+    "U07584FHQMN": "Kush",
+  };
+  
+  function getUserName(userId) {
+    return USER_NAMES[userId] || (userId ? `<@${userId}>` : "Unassigned");
+  }
 
   function parseListItemForContext(raw, listId) {
     const fields = raw.fields || [];
@@ -74,9 +90,8 @@ export function createResearchEventsRouter({ slack, helpMessage }) {
       if (field.key === "todo_due_date" && field.value) due = field.value;
       if (field.key === "Col093T8A25LG" && field.value) status = STATUS_OPTIONS[field.value] || status;
       if (field.key === "Col08V4T02P5Y" && field.value) priority = PRIORITY_OPTIONS_MAP[field.value] || priority;
-      // Try to capture additional notes/description fields
-      const k = (field.key || "").toLowerCase();
-      if (!notes && field.text && (k.includes("desc") || k.includes("note") || k.includes("detail") || k.includes("summary"))) {
+      // Capture description from the specific column (Col08V5C24K1S)
+      if (field.key === "Col08V5C24K1S" && field.text) {
         notes = field.text;
       }
     }
@@ -100,10 +115,22 @@ export function createResearchEventsRouter({ slack, helpMessage }) {
     const sorted = [...items].sort((a, b) => (PRIORITY_ORDER[a.priority] ?? 99) - (PRIORITY_ORDER[b.priority] ?? 99));
     const trimmed = sorted.slice(0, maxItems);
     const lines = trimmed.map((it) => {
-      const assignee = it.assigneeId ? `<@${it.assigneeId}>` : "Unassigned";
+      const assignee = getUserName(it.assigneeId);
       const dueText = it.due ? dayjs(it.due).tz(tz).format("YYYY-MM-DD") : "no due date";
       const pri = it.priority && it.priority !== "None" ? `[${it.priority}] ` : "";
-      const notes = it.notes ? ` — ${it.notes.slice(0, 160)}` : "";
+      
+      // Format notes/description better
+      let notes = "";
+      if (it.notes) {
+        // Clean up whitespace and newlines
+        const cleanNotes = it.notes.replace(/\s+/g, ' ').trim();
+        if (cleanNotes.length > 200) {
+          notes = `\n   Details: ${cleanNotes.slice(0, 200)}...`;
+        } else if (cleanNotes) {
+          notes = `\n   Details: ${cleanNotes}`;
+        }
+      }
+      
       return `- ${pri}${assignee} • ${it.title} (Due: ${dueText})${notes}`;
     });
     return lines.join("\n");

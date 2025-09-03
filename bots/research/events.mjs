@@ -1,0 +1,178 @@
+import express from "express";
+import { generateLLMReply } from "../../src/lib/llm.mjs";
+import { dayjs } from "../../src/lib/time.mjs";
+import { getResearchConfig } from "./config.mjs";
+
+export function createResearchEventsRouter({ slack, helpMessage }) {
+  const router = express.Router();
+
+  function stripMentions(text) {
+    return (text || "")
+      .replace(/<@[^>]+>/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  async function loadThreadSnippet(channel, ts, limit = 8, maxChars = 1200) {
+    try {
+      const resp = await slack.conversations.replies({ channel, ts, limit });
+      const msgs = resp.messages || [];
+      const parts = msgs
+        .map((m) => (m.text || "").replace(/<@([^>]+)>/g, "@$1"))
+        .filter(Boolean);
+      let snippet = "";
+      for (const p of parts.reverse()) {
+        if (snippet.length + p.length + 2 > maxChars) break;
+        snippet = p + "\n" + snippet;
+      }
+      return snippet.trim();
+    } catch (e) {
+      return "";
+    }
+  }
+
+  // Slack Lists helpers (kept local to avoid heavy refactor)
+  async function fetchListItems(slack, listId) {
+    try {
+      if (!listId) return [];
+      const response = await slack.apiCall("slackLists.items.list", { list_id: listId, limit: 200 });
+      if (!response.ok) return [];
+      return response.items || [];
+    } catch {
+      return [];
+    }
+  }
+
+  const STATUS_OPTIONS = {
+    "Opt2AUH34OG": "ToDo",
+    "Opt62NHHN5C": "ToDo",
+    "OptHSJVP60E": "In Progress",
+    "OptHX1KN4IP": "Deprecated",
+    "OptZHYHCA4A": "Backlog",
+    "Opt38B8RWRR": "Complete",
+  };
+  const PRIORITY_OPTIONS_MAP = {
+    "Opt0183CXDH": "P0",
+    "Opt4GBWBKZB": "P1",
+    "OptGESIX7LE": "P2",
+    "Opt24AKKH4V": "P3",
+  };
+  const PRIORITY_ORDER = { P0: 0, P1: 1, P2: 2, P3: 3, P4: 4, None: 99 };
+
+  function parseListItemForContext(raw, listId) {
+    const fields = raw.fields || [];
+    let title = "Untitled";
+    let assigneeId = null;
+    let due = null;
+    let status = "Unknown";
+    let priority = "None";
+    let notes = "";
+
+    for (const field of fields) {
+      if ((field.key === "name" || field.key === "title") && field.text) title = field.text;
+      if (field.key === "todo_assignee" && Array.isArray(field.user) && field.user.length > 0) assigneeId = field.user[0];
+      if (field.key === "todo_due_date" && field.value) due = field.value;
+      if (field.key === "Col093T8A25LG" && field.value) status = STATUS_OPTIONS[field.value] || status;
+      if (field.key === "Col08V4T02P5Y" && field.value) priority = PRIORITY_OPTIONS_MAP[field.value] || priority;
+      // Try to capture additional notes/description fields
+      const k = (field.key || "").toLowerCase();
+      if (!notes && field.text && (k.includes("desc") || k.includes("note") || k.includes("detail") || k.includes("summary"))) {
+        notes = field.text;
+      }
+    }
+
+    const priorityMatch = title.match(/\b[Pp]([0-4])\b/);
+    if (priorityMatch) {
+      priority = "P" + priorityMatch[1];
+      title = title.replace(/^\s*[Pp][0-4]\s*:?\s*/, "");
+    }
+
+    const teamId = "T06K7221F6C";
+    const permalink = `https://ikhorlabs.slack.com/lists/${teamId}/${listId}?record_id=${raw.id}`;
+    return { id: raw.id, title, assigneeId, due, status, priority, notes, permalink };
+  }
+
+  function filterRelevant(items) {
+    return items.filter((it) => it.status === "ToDo" || it.status === "In Progress");
+  }
+
+  function buildTasksContext(items, tz, maxItems = 80) {
+    const sorted = [...items].sort((a, b) => (PRIORITY_ORDER[a.priority] ?? 99) - (PRIORITY_ORDER[b.priority] ?? 99));
+    const trimmed = sorted.slice(0, maxItems);
+    const lines = trimmed.map((it) => {
+      const assignee = it.assigneeId ? `<@${it.assigneeId}>` : "Unassigned";
+      const dueText = it.due ? dayjs(it.due).tz(tz).format("YYYY-MM-DD") : "no due date";
+      const pri = it.priority && it.priority !== "None" ? `[${it.priority}] ` : "";
+      const notes = it.notes ? ` — ${it.notes.slice(0, 160)}` : "";
+      return `- ${pri}${assignee} • ${it.title} (Due: ${dueText})${notes}`;
+    });
+    return lines.join("\n");
+  }
+
+  router.post("/events", async (req, res) => {
+    const body = req.slackRawBody ? JSON.parse(req.slackRawBody) : req.body;
+
+    if (body.type === "url_verification") {
+      return res.json({ challenge: body.challenge });
+    }
+
+    // Respond immediately to avoid retries
+    res.status(200).send();
+
+    if (body.type === "event_callback") {
+      const event = body.event;
+      if (event && event.type === "app_mention") {
+        const { systemPrompt, googleModel, listId, timezone: tz } = getResearchConfig();
+        const userText = stripMentions(event.text);
+        const thread_ts = event.thread_ts || event.ts;
+
+        // Simple commands
+        if (/\bhelp\b/i.test(userText)) {
+          try {
+            await slack.chat.postMessage({ channel: event.channel, thread_ts, text: helpMessage });
+          } catch (err) {
+            console.error("Research help reply failed:", err);
+          }
+          return;
+        }
+
+        // Build task context (ToDo/In Progress)
+        let tasksContext = "";
+        try {
+          const rawItems = await fetchListItems(slack, listId);
+          const parsed = rawItems.map((r) => parseListItemForContext(r, listId));
+          const relevant = filterRelevant(parsed);
+          if (relevant.length > 0) {
+            tasksContext = buildTasksContext(relevant, tz);
+          }
+        } catch (_) {}
+
+        // LLM reply
+        const threadContext = await loadThreadSnippet(event.channel, thread_ts);
+        let system = systemPrompt;
+        if (tasksContext) {
+          system += `\n\nCurrent tasks (ToDo/In Progress):\n${tasksContext}`;
+        }
+        if (threadContext) {
+          system += `\n\nThread context (summarized, may be incomplete):\n${threadContext}`;
+        }
+        try {
+          const content = await generateLLMReply({
+            system,
+            messages: [{ role: "user", content: userText || "Please introduce yourself and how you can help." }],
+            model: googleModel,
+          });
+          await slack.chat.postMessage({ channel: event.channel, thread_ts, text: content });
+          console.log(`Research bot LLM replied in ${event.channel}`);
+        } catch (error) {
+          console.error("Research LLM error:", error);
+          try {
+            await slack.chat.postMessage({ channel: event.channel, thread_ts, text: "⚠️ I hit an error talking to the LLM. Try again later." });
+          } catch (_) {}
+        }
+      }
+    }
+  });
+
+  return router;
+}

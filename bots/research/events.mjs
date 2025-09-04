@@ -237,8 +237,9 @@ export function createResearchEventsRouter({ slack, helpMessage }) {
         const threadContext = await loadThreadSnippet(event.channel, thread_ts);
         let system = systemPrompt;
         system += `\n\nYou are responding to ${userName} who mentioned you in Slack.`;
+        system += `\n\nTask Status Definitions:\n- ToDo: Task has not been started yet\n- In Progress: Task is currently being worked on\n- In Review: Task has been completed by the assignee and is awaiting review/approval from the requester\n`;
         if (tasksContext) {
-          system += `\n\nCurrent R&D task status (organized by stage):\n${tasksContext}`;
+          system += `\nCurrent R&D task status (organized by stage):\n${tasksContext}`;
         }
         if (threadContext) {
           system += `\n\nThread context (summarized, may be incomplete):\n${threadContext}`;

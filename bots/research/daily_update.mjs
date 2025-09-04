@@ -19,7 +19,7 @@ const PRIORITY_OPTIONS_MAP = {
 // Map status option IDs to readable status names
 const STATUS_OPTIONS = {
   "Opt2AUH34OG": "ToDo",
-  "Opt62NHHN5C": "ToDo",
+  "Opt62NHHN5C": "In Review",  // Fixed: was incorrectly mapped to ToDo
   "OptHSJVP60E": "In Progress",
   "OptHX1KN4IP": "Deprecated",
   "OptZHYHCA4A": "Backlog",

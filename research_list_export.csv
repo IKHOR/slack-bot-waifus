@@ -1,0 +1,133 @@
+id,title,assignee_id,due_date,status_option_id,status_mapped,status_raw,priority_option_id,priority_mapped,priority_raw,description,completed,created_by,date_created,updated_timestamp
+Rec09D6QWJFRT,Example Outputs,U06L088EW7K,2025-09-04,Opt2AUH34OG,ToDo,,Opt0183CXDH,P0,,due EOD thursday  Provide inputs and outputs  Provide brief documentation (1 sentence on how it works and relevance of prompts / prompts used)  • Video in-painting • Character on green • Trajectory Control • Qwen Instruct New Angle (first frame + last frame) • Qwen Instruct New character pose (first frame + last frame),,U06KJLR4GBF,2025-09-03T07:10:08.000Z,1756883535
+Rec09D8QPC8Q2,Bugfix / smoke test,,,,Unknown,,,None,,,,U06KJLR4GBF,2025-09-03T06:47:53.000Z,1756882079
+Rec09D9T9383G,Environments (dev > staging > prod > prod/qzilla),,,,Unknown,,,None,,,,U06KJLR4GBF,2025-09-03T06:47:42.000Z,1756882074
+Rec09D6MMMWFP,Throttling (max _3_ running at any time),,,,Unknown,,,None,,,,U06KJLR4GBF,2025-09-03T06:47:31.000Z,1756882062
+Rec09D6MHN7L5,Auth/ role based widget acces,,,,Unknown,,,None,,,,U06KJLR4GBF,2025-09-03T06:47:21.000Z,1756882051
+Rec09D6MGDESH,Ship Canvas to Qzilla,U06K8F0F1RC,2025-09-08,Opt2AUH34OG,ToDo,,Opt0183CXDH,P0,,,,U06KJLR4GBF,2025-09-03T06:46:15.000Z,1756882024
+Rec09CNNK3BF1,Human Build 1 Widget,U09BTLXG89G,,,Unknown,,,None,,,,U06KJLR4GBF,2025-09-02T09:43:10.000Z,1756806200
+Rec09D0SUPUDB,Test Qwen BG with Civit style,U06L088EW7K,,Opt2AUH34OG,ToDo,,Opt4GBWBKZB,P1,,A-B test with the current ouputs that have been generated with the SDXL version of the workflow,,U06KJLR4GBF,2025-09-02T09:40:54.000Z,1756806148
+Rec09D7C1HFRS,Get Primadonna In Wonder Canvas,U06K8F0F1RC,2025-09-04,Opt2AUH34OG,ToDo,,Opt4GBWBKZB,P1,,,,U06KJLR4GBF,2025-09-02T09:40:03.000Z,1756806070
+Rec09D3JY83FY,p2 ref image experiments,U06L088EW7K,,,Unknown,,,None,,,,U06KJLR4GBF,2025-09-02T09:38:58.000Z,1756805973
+Rec09D0SL4D9T,p1 v1.0 char LoRA,U06K8F0F1RC,,,Unknown,,,None,,,,U06KJLR4GBF,2025-09-02T09:38:52.000Z,1756805949
+Rec09D2GQCN90,p1 v1.0 lineart LoRA,U06K8F0F1RC,,,Unknown,,,None,,,,U06KJLR4GBF,2025-09-02T09:38:29.000Z,1756805944
+Rec09DGC2DXQ9,p0 fix workflow inpainting,U06K8F0F1RC,,,Unknown,,,None,,,,U06KJLR4GBF,2025-09-02T09:38:18.000Z,1756805942
+Rec09D7BSE5BN,Magic Qwen Workflow Improvements,U06K8F0F1RC,2025-09-05,Opt2AUH34OG,ToDo,,Opt0183CXDH,P0,,,,U06KJLR4GBF,2025-09-02T09:37:46.000Z,1756805897
+Rec09DG9LHFB3,Update Job Response,U06K8F0F1RC,,,Unknown,,,None,,,,U06KJLR4GBF,2025-09-02T09:22:57.000Z,1756805002
+Rec09D79NSVN0,Document new Auth,U06K8F0F1RC,,,Unknown,,,None,,,,U06KJLR4GBF,2025-09-02T09:22:53.000Z,1756805006
+Rec09D62BV6NQ,Uni3C Camera Control for Primadonna,U06K8F0F1RC,2025-09-05,Opt2AUH34OG,ToDo,,Opt4GBWBKZB,P1,,• demo-able • workflow put into comfy deploy • camera trajectory pulled in off of blender camera     ◦ stretch: list of pre-packaged camera trajectories,,U06KJLR4GBF,2025-09-02T04:10:20.000Z,1756889575
+Rec09CU6ZEX9B,Background v1.2: Inpainting and decouple some functions in workflow,U06L088EW7K,2025-09-08,OptHSJVP60E,In Progress,,Opt0183CXDH,P0,,"• Add inpainting support • Decouple upscale from the detail mode so that  output is always 2K, but we can programmatically upscale to 4K • Remove color shift (filter node) • [Stretch] Switch to tell the workflow to only return the masked area when inpainting (the rest is made transparent)",,U073Y77J5TN,2025-09-01T01:41:22.000Z,1756871886
+Rec09C4EQ1DTM,Char Trainer in Sandbox,U06K8F0F1RC,2025-09-09,Opt2AUH34OG,ToDo,,Opt4GBWBKZB,P1,,lets make char trains fast • Widgets in     ◦ Qwen Edit     ◦ Nano Banana • Char Training widget,,U06KJLR4GBF,2025-08-27T11:59:21.000Z,1756805445
+Rec09D2UBKFG8,Tooncomposer Research,U09BTLXG89G,2025-09-05,Opt38B8RWRR,Complete,,OptGESIX7LE,P2,,"read up on tooncomposer, think about training methodologies we can use to increase the resolution - or other ways (VACE train, etc) to train recent video models like wan2.1/wan2.2 to the have anime-like sparse frames",,U06KJLR4GBF,2025-08-27T11:57:58.000Z,1756805646
+Rec09BW6Q6GQP,Finish server integration,,,,Unknown,,,None,,,true,U06KJLR4GBF,2025-08-27T11:56:27.000Z,1756788195
+Rec09C7A7EU2Z,Convert old widgets,,,,Unknown,,,None,,,true,U06KJLR4GBF,2025-08-27T11:56:17.000Z,1756805034
+Rec09CD2RN7A8,WonderCanvas able-to-be-dev'd on,U06K8F0F1RC,2025-09-03,OptHSJVP60E,In Progress,,Opt0183CXDH,P0,,yay,,U06KJLR4GBF,2025-08-27T11:55:25.000Z,1756804891
+Rec09D2TYBJE4,Test Qwen Outputs QA vs Prod,U06L088EW7K,2025-09-03,Opt62NHHN5C,ToDo,,Opt0183CXDH,P0,,waiting on Qwen Lineart and Qwen Char Trains,,U06KJLR4GBF,2025-08-27T11:54:44.000Z,1756893986
+Rec09C79XHCUV,Qwen Char Train (dialed settings),U06K8F0F1RC,,Opt62NHHN5C,ToDo,,Opt4GBWBKZB,P1,,iterate and improve on settings for Qwen character training using Fer,,U06KJLR4GBF,2025-08-27T11:53:45.000Z,1756788646
+Rec09D2TT0Q80,Qwen Lineart LoRA,U06K8F0F1RC,2025-09-04,Opt62NHHN5C,ToDo,,Opt4GBWBKZB,P1,,,,U06KJLR4GBF,2025-08-27T11:53:23.000Z,1756877594
+Rec09D2TLEC7J,WF - ComfyDeploy: Wan 2.2 Single Image Gen Workflow,U06L088EW7K,2025-09-02,OptHX1KN4IP,Deprecated,,OptGESIX7LE,P2,,,,U06KJLR4GBF,2025-08-27T11:51:25.000Z,1756787993
+Rec099FLA33B3,Fix Wan2.2 First Frame Workflow Working with Playground and API,U0798RS2ESX,2025-08-07,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,,,U06KJLR4GBF,2025-08-05T09:29:59.000Z,1756181589
+Rec098W6MGTUN,Capture a bunch of Magic Pen failure poses from fight scene project,U06L088EW7K,2025-08-30,Opt38B8RWRR,Complete,,,None,,"As discussed, it’d be really helpful if you could include some rough input sketches and illustrious outputs for complex poses you weren’t able/wouldn’t be able to achieve with Magic Pen.  You can place them into this document with similar formatting.  Best is separate input from output images pasted in so we can re-use for testing in the future. https://docs.google.com/document/d/1SnlwPQ_NNG6KCn0cwFoBvN9BVvlpwbUoox89R1O4dxk/edit?usp=sharing",,U079Z6D4YFJ,2025-08-05T08:22:08.000Z,1756788017
+Rec099LGL4CNL,WF - BG4: Outpaint Background,U0798RS2ESX,2025-09-05,OptZHYHCA4A,Backlog,,Opt24AKKH4V,P3,,• Extend background image from any edge by defined number of pixels (outpaint),,U06KJLR4GBF,2025-08-05T05:10:20.000Z,1756805617
+Rec098YFW4PEE,WF - BG5: Adjust Background Perspective,U09BTLXG89G,2025-09-16,Opt62NHHN5C,ToDo,,OptGESIX7LE,P2,,"2 approaches • Background image PERSPECTIVE modification (more control, but maybe lower quality?)     a. x, y, z point of reference     b. roll, pitch, yaw rotation point of reference • Apply a camera movement to a 2d image and genarate output video (less control, but maybe higher quality?)     a. Bonus: supported modifications by prompts     b. Bonus: generate as sequence of static images at defined time intervals • _these are essentially the same thing, just like group 2, 2 different approache",,U06KJLR4GBF,2025-08-05T05:10:18.000Z,1756889790
+Rec099EFRBUG1,WF - BG6: Background 3D->2D,U09BTLXG89G,2025-09-16,Opt2AUH34OG,ToDo,,Opt24AKKH4V,P3,,• Flatten a 3d scene to a 2d b&w lineart image • This is actually just Qwen style model guided img->img,,U06KJLR4GBF,2025-08-05T05:10:17.000Z,1756805136
+Rec098J9ZRYQ7,WF - BG3: upscale background,,2026-08-31,OptZHYHCA4A,Backlog,,Opt24AKKH4V,P3,,• Upscale background image,,U06KJLR4GBF,2025-08-05T05:06:55.000Z,1756805778
+Rec099LG99M24,WF - BG2: adjust light,U09BTLXG89G,2025-09-02,OptHSJVP60E,In Progress,,Opt4GBWBKZB,P1,,"• Change primary source of light/angle of light     ◦ Bonus: Add one or more secondary light sources/strength_notes: kontext can probably do this with text, maybe higher quality for less precision than ic relight_     ◦ _specific x,y,z coordinate for light area (?)_ • _Seems to involve training_",,U06KJLR4GBF,2025-08-05T05:06:48.000Z,1756881287
+Rec09901ZQCUC,WF - BG1: adjust background,U09BTLXG89G,2025-08-28,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,"4 workflows • Change Time of Day • Change/Add Weather (Rain, Snow, Wind etc) • Change Season (Fall, Spring, Summer, Winter) • _text / img guided img->img (kontext?)_ 1. go to bandadoco 2. review most recent posts related to qwen img->img workflows 3. get it loaded up on local or server 4. turn it into a comfydeploy endpoint Spec here: https://docs.google.com/spreadsheets/d/1VR2INP4M0b7vegTHI2YmhnSdBTcvVMymYpu-e2Bqfpg/edit?usp=sharing",,U06KJLR4GBF,2025-08-05T04:50:53.000Z,1756787973
+Rec098J535XQF,WF: Video Anime Gaze Tracking,U06L088EW7K,2025-09-05,Opt2AUH34OG,ToDo,,Opt4GBWBKZB,P1,,,,U06KJLR4GBF,2025-08-05T04:17:47.000Z,1756805808
+Rec098E35BDPF,Sarah,U06L088EW7K,2025-08-08,Opt38B8RWRR,Complete,,OptGESIX7LE,P2,,[OLM digital],true,U07F13STQDA,2025-08-01T03:18:59.000Z,1756350691
+Rec098CMGKYKV,Multi,U06L088EW7K,2025-08-08,Opt38B8RWRR,Complete,,OptGESIX7LE,P2,,[OLM digital],true,U07F13STQDA,2025-08-01T03:18:48.000Z,1756350689
+Rec098HHLBMAQ,Indou,U06L088EW7K,2025-08-08,Opt38B8RWRR,Complete,,OptGESIX7LE,P2,,[OLM digital],true,U07F13STQDA,2025-08-01T03:17:10.000Z,1756350695
+Rec098CMB7SUB,Jougamine,U06L088EW7K,2025-08-08,Opt38B8RWRR,Complete,,OptGESIX7LE,P2,,[OLM digital],true,U07F13STQDA,2025-08-01T03:17:00.000Z,1756690711
+Rec098CM8JC2X,Yashiro,U07584FHQMN,2025-07-31,Opt38B8RWRR,Complete,,OptGESIX7LE,P2,,[OLM digital],true,U07F13STQDA,2025-08-01T03:16:02.000Z,1756690757
+Rec097Y2US8LU,Get Data Batch 1 Organized,U06KJLR4GBF,2025-08-01,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,,,U06KJLR4GBF,2025-07-29T04:57:58.000Z,1756283846
+Rec097TT1DYBY,3. Test the Kontext workflow,U06L088EW7K,,,Unknown,,,None,,,true,U06KJLR4GBF,2025-07-29T04:54:51.000Z,1756350692
+Rec098BCQE97B,2. Create a Kontext workflow that leverages that LoRA,U0798RS2ESX,,,Unknown,,,None,,,,U06KJLR4GBF,2025-07-29T04:54:45.000Z,1753764926
+Rec097S443JLT,1. Train a single rough->clean character for Flux Kontext (FER),U06K8F0F1RC,,,Unknown,,,None,,,,U06KJLR4GBF,2025-07-29T04:53:40.000Z,1753764922
+Rec097FPD3X6W,New Discussion Topics - Kontext based magic pen - re-training VACE as a batch magic pen approach,,,OptHX1KN4IP,Deprecated,,,None,,,,U06KJLR4GBF,2025-07-25T07:40:13.000Z,1756180718
+Rec096VB2C7LJ,In Betweening Test,U0798RS2ESX,2025-07-29,Opt38B8RWRR,Complete,,Opt4GBWBKZB,P1,,Test if this works on anime - provide some feedback on if it could be useful to look more deeply into,true,U06KJLR4GBF,2025-07-22T04:53:25.000Z,1753763252
+Rec096Q1GQU8K,QA of July candidate releases (MP & In-Betweener),U06L088EW7K,2025-07-30,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,"If I could kindly ask you tomorrow (Japan Thursday) both to do: 1. Some sketch testing with a few characters in MP to make sure there have been no regressions or weirdness introduced by our changes 2. Running a bunch of inbetweening runs, and checking especially reverse, seed, lots of ticks to make sure make sure the outputs seem in order.",true,U06KJLR4GBF,2025-07-22T04:53:09.000Z,1753855228
+Rec096EJ3P6EB,"Identifying the pitfalls / areas for improvement V2
+
+- character spin
+- character moves from close to camera to far away
+- character moves from far away from camera to close",U0798RS2ESX,,,Unknown,,,None,,,,U06KJLR4GBF,2025-07-22T04:49:56.000Z,1753159841
+Rec097HMYQ2E4,"Testing max length of context window, time cost and quality / control cost",U0798RS2ESX,,,Unknown,,,None,,,true,U06KJLR4GBF,2025-07-22T04:47:10.000Z,1754367600
+Rec096S6VET1C,Test: testing inputs with cosplay (Anime RPS) - (evaluating the quality improvement that comes from passing in the input video as reference for the final diffusion - kij node),U0798RS2ESX,,,Unknown,,,None,,,,U06KJLR4GBF,2025-07-22T04:44:40.000Z,1753159645
+Rec096V93KFBL,Primadonna Project Page for Studio Outreach,U06K8F0F1RC,2025-07-25,OptHX1KN4IP,Deprecated,,Opt0183CXDH,P0,,"• Ko, Shru, Jackson waiting on to do studio outreach",,U06KJLR4GBF,2025-07-22T04:30:51.000Z,1756283854
+Rec096WNCFNFJ,To Document what to test,U06K8F0F1RC,,,Unknown,,,None,,,true,U06KJLR4GBF,2025-07-17T08:53:34.000Z,1753158627
+Rec095THZ67TR,Gathering a batch of test inputs to pass into Primadonna - to be gathered together in a github page and used as standard reference inputs,U06K8F0F1RC,,,Unknown,,,None,,,true,U06KJLR4GBF,2025-07-17T08:53:21.000Z,1753158554
+Rec0962BHDNCT,Marshal,U06L088EW7K,2025-07-31,Opt38B8RWRR,Complete,,OptGESIX7LE,P2,,[OLM digital],true,U07F13STQDA,2025-07-17T08:16:32.000Z,1756690697
+Rec0965UZUGN9,Sam,U06L088EW7K,2025-07-31,Opt38B8RWRR,Complete,,OptGESIX7LE,P2,,[OLM digital],true,U07F13STQDA,2025-07-17T08:16:25.000Z,1754018320
+Rec096WGJG49E,Charles,U06L088EW7K,2025-07-31,Opt38B8RWRR,Complete,,OptGESIX7LE,P2,,[OLM digital],true,U07F13STQDA,2025-07-17T08:15:00.000Z,1754018318
+Rec096WFZ2KMW,MaoMao,U06L088EW7K,2025-07-25,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[OLM digital] July 17 (Thu),true,U07F13STQDA,2025-07-17T08:10:58.000Z,1754018303
+Rec0962A8B9FV,Ai,U06L088EW7K,2025-07-25,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[OLM digital] July 17 (Thu),true,U07F13STQDA,2025-07-17T08:07:32.000Z,1754018302
+Rec095U3C5Y75,Gather Cleanup Training Data,U06L088EW7K,2025-07-18,Opt38B8RWRR,Complete,,Opt4GBWBKZB,P1,,Gather clean up data (rough Genga versus the clean Genga) from previous works - gather in google drive and send over to <@U06KJLR4GBF>,true,U06KJLR4GBF,2025-07-16T00:35:31.000Z,1756350692
+Rec095DGV25DM,,U06KJLR4GBF,2025-07-22,,Unknown,,,None,,,,U06KJLR4GBF,2025-07-15T06:01:28.000Z,1753765068
+Rec095T4AU04V,Test Flux Kontext at high resolution using tiles,U06LABY2Y64,,OptHX1KN4IP,Deprecated,,,None,,,,U06KJLR4GBF,2025-07-15T06:00:14.000Z,1756180725
+Rec095VDTHCBW,Untitled,U06KJLR4GBF,,,Unknown,,,None,,,,U06KJLR4GBF,2025-07-15T05:59:39.000Z,1752559191
+Rec095NFPHKFD,Example Inputs for Cleanup,U06KJLR4GBF,,,Unknown,,,None,,,,U06KJLR4GBF,2025-07-15T05:59:34.000Z,1752559188
+Rec0967JRDWE5,Example Inputs for Primadonna,U06KJLR4GBF,,,Unknown,,,None,,,,U06KJLR4GBF,2025-07-15T05:59:27.000Z,1752559186
+Rec095R25KE9L,"Example Inputs for Magic Pen Testing
+
+(document all edge cases)",U06KJLR4GBF,,,Unknown,,,None,,,true,U06KJLR4GBF,2025-07-15T05:59:15.000Z,1756805219
+Rec095TNP5ZPU,Example Inputs for In-Betweening,U06KJLR4GBF,,,Unknown,,,None,,,,U06KJLR4GBF,2025-07-15T05:59:03.000Z,1752559182
+Rec095NFKNR4K,"Dataset for Aliasing
+
+Work with <@U06L088EW7K> and get clean genga + aliased / binarized pairs of... the same resolution?",U06KJLR4GBF,2025-07-22,,Unknown,,,None,,,true,U06KJLR4GBF,2025-07-15T05:58:31.000Z,1753765061
+Rec0967JM3SJD,"Dataset for Cleanup
+
+Work with <@U06L088EW7K> and get rough genga + clean genga pairs of... the same resolution?",U06KJLR4GBF,2025-07-22,,Unknown,,,None,,,true,U06KJLR4GBF,2025-07-15T05:58:16.000Z,1753765060
+Rec095DBGG0G7,Primadonna In House Animation Test,U06K8F0F1RC,2025-08-05,OptHX1KN4IP,Deprecated,,Opt24AKKH4V,P3,,An in-house made animation leveraging primadonna and video to video technologies  Learn about and document the method for creating a full front-to-back animation,,U06KJLR4GBF,2025-07-15T05:07:48.000Z,1756181555
+Rec096G8P36UQ,Primadonna Examples,U06K8F0F1RC,2025-07-15,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,Gathering a batch of test inputs to pass into Primadonna - to be gathered together in a github page and used as standard reference inputs  To Document usage and expected experiments and a place to log improvements  Blocking <@U0798RS2ESX> on testing,,U06KJLR4GBF,2025-07-15T05:00:14.000Z,1753258554
+Rec095BK4JEQ4,Complie QA Eval Images for all top workflows,U06KJLR4GBF,2025-09-16,Opt2AUH34OG,ToDo,,OptGESIX7LE,P2,,"This should include input images / videos for QA, an instructional doc, locations for the outputs, and format",,U06KJLR4GBF,2025-07-10T21:42:44.000Z,1756877600
+Rec095T7X414Y,Kahara Asuka / Imagica,U07F13STQDA,2025-07-11,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[imagica],true,U07F13STQDA,2025-07-10T06:09:10.000Z,1754018301
+Rec09541XN3SR,Shinoka Manami / Imagica,U07F13STQDA,2025-07-11,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[imagica],true,U07F13STQDA,2025-07-10T06:07:10.000Z,1754018300
+Rec094K79NJCF,"Identifying the pitfalls / areas for improvement
+
+- facial close up
+- aggressive turns
+- dynamic quick movement
+- forshortening",U0798RS2ESX,,,Unknown,,,None,,,true,U06KJLR4GBF,2025-07-09T02:59:59.000Z,1753159774
+Rec09500UF2GL,"Gaze Tracking
+
+Looking to add an element of control to track the gaze of the character?",U0798RS2ESX,,,Unknown,,,None,,,true,U06KJLR4GBF,2025-07-09T02:58:34.000Z,1754367466
+Rec0956G7FNRF,"Preprocessing improvements
+
+How dynamic can we make it? Can we take any resolution?
+
+(testing at 3 different resolutions in increasing sizes for the preprocessor)",U0798RS2ESX,,,Unknown,,,None,,,true,U06KJLR4GBF,2025-07-08T09:28:20.000Z,1753764169
+Rec094T7EGF6W,"Improving res of that can be ran with context window
+
+Current max seems to be 1536x864 - can we get it with 1920x1088 on a reasonable GPU (h100 ideally) with the context window working",U0798RS2ESX,,,Unknown,,,None,,,true,U06KJLR4GBF,2025-07-08T09:25:26.000Z,1753764110
+Rec095F3GR9G8,Primadonna R&D: Batch 1,U0798RS2ESX,2026-08-12,OptHX1KN4IP,Deprecated,,Opt0183CXDH,P0,,,,U06KJLR4GBF,2025-07-08T09:24:58.000Z,1756180593
+Rec094T662UHY,Record a Video walking through the process of using the V2 Trainer,U06K8F0F1RC,2025-07-09,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,jackson to fill in,true,U06KJLR4GBF,2025-07-08T09:16:33.000Z,1752555709
+Rec094LDB26CB,Primadonna Exploratory Meetings Round 1,U06K8F0F1RC,2025-07-25,OptHX1KN4IP,Deprecated,,Opt0183CXDH,P0,,Work with <@U07F13STQDA> and <@U06LABYENC8> to get a goal date set for either in-persons or online with each prospective client aside from Polygon / Square Enix  Establish a weekly meeting sync / channel for updates on comms around them,,U06KJLR4GBF,2025-07-08T05:01:14.000Z,1756180586
+Rec094D5Q4S3Z,Fight Scene,U06L088EW7K,2025-09-05,OptHSJVP60E,In Progress,,Opt4GBWBKZB,P1,,Fer v Pantherbot fight scene,,U06KJLR4GBF,2025-07-08T04:54:50.000Z,1756804840
+Rec095DVCBHNC,Cleanup Workflow using Kontext Pair Loras,U0798RS2ESX,,OptHX1KN4IP,Deprecated,,Opt24AKKH4V,P3,,test building a new cleanup workflow,,U06KJLR4GBF,2025-07-08T04:47:50.000Z,1753764542
+Rec094S1T3QD8,Untitled,U07584FHQMN,,,Unknown,,,None,,,,U06KJLR4GBF,2025-07-08T04:46:07.000Z,1751949968
+Rec094QSUN0Q5,,U07584FHQMN,,,Unknown,,,None,,,,U06KJLR4GBF,2025-07-08T04:46:03.000Z,1751949977
+Rec094LBPMJ3V,In-betweening Workflow Improvement,U0798RS2ESX,2025-07-29,OptHX1KN4IP,Deprecated,,Opt24AKKH4V,P3,,1. LTXV has controlnet support - sketch guided in-betweening support 2. using Kontext to do line extraction / binarization 3. using Kontext pair loras to generate the in-between (???),,U06KJLR4GBF,2025-07-08T04:44:43.000Z,1753764544
+Rec094TSFJF28,Nunchaku Mpen Update,U0798RS2ESX,2025-07-18,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,Workflow with Nunchaku update has already been sent over - <@U073Y77J5TN> responsible for getting it deployed -  *it changes the output a bit but the speed benefit is really huge - <@U0798RS2ESX> needs to know if this is viable/ acceptable as a tradeoff*,true,U06KJLR4GBF,2025-07-08T04:34:11.000Z,1752556292
+Rec094M7Q1L6N,Separate Lineart Ripper Utility (workflow),U0798RS2ESX,,OptHX1KN4IP,Deprecated,,Opt24AKKH4V,P3,,"<@U0798RS2ESX> — since we’re replacing the Magic Pen lineart rippper, <@U073Y77J5TN> <@U071M04D2SE> and I (<@U079Z6D4YFJ>) were hoping you could take a look at the standalone lineart ripper utility/workflow which hasn’t been touched in a long time.  If it’s possible to review and upgrade this, and deliver a new, updated workflow here, that’d set us up to also ship an updated standalone lineart ripper tool (Adam thought this would require a worker update at a minimum).  Please ping <@U073Y77J5TN>",,U079Z6D4YFJ,2025-07-07T10:38:45.000Z,1753763370
+Rec094LLFT46M,Nanase / Hibari,U073Y77J5TN,2025-07-09,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[studio hibari],true,U06K8F0F1RC,2025-07-03T11:59:10.000Z,1752556271
+Rec093T2N3223,Okki V2,U07584FHQMN,2025-07-31,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[78nine],true,U07F13STQDA,2025-07-03T06:43:39.000Z,1752671506
+Rec094U9DN0HE,Kurogami Mirei V2,U07584FHQMN,2025-07-15,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[78nine],true,U07F13STQDA,2025-07-03T06:42:39.000Z,1752671495
+Rec093T2ASJET,Ayanokouji,U073Y77J5TN,2025-07-09,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[studio hibari],true,U07F13STQDA,2025-07-03T06:40:48.000Z,1752556265
+Rec094JQ5LSBT,Trainer V1 handoff,U06K8F0F1RC,2025-07-04,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,<@U06K8F0F1RC> to meet with <@U06L088EW7K> regarding handoff of character trainer V1. To help with any character training / data processing related work,true,U06KJLR4GBF,2025-07-03T04:39:22.000Z,1752556287
+Rec09415N51RC,Kontext Based Magic Pen Workflow Improvement,U0798RS2ESX,2025-07-18,OptHX1KN4IP,Deprecated,,Opt24AKKH4V,P3,,"Building a new magic pen workflow that utilizes Flux Kontext at it's core.  <@U0798RS2ESX> to lead this initiative with guidance and support from <@U06L088EW7K>.  This initiative is open to potential departures from the current modal (loras, switching) - but also open to still using them - with creative liberty on use case and value to be provided by <@U06L088EW7K> throughout the research development process. There is also a goal to enable other optimizations (as listed in the relevant message) ",,U06KJLR4GBF,2025-07-03T03:43:49.000Z,1756180689
+Rec093VMFGQLW,Magic Pen Lineart Ripper Improvement,U0798RS2ESX,2025-07-04,OptHX1KN4IP,Deprecated,,Opt0183CXDH,P0,,In addition to the Nanchaku improvement that had been added (and handed over to Adam) to get an improved lineart ripper (Fills 2k lineart unet?),,U06KJLR4GBF,2025-07-02T08:50:30.000Z,1753770406
+Rec094MD8HASC,Acquire Training Data for Kontext fine tuning,U06KJLR4GBF,2025-07-22,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,"Square ratio could help, get data in as high res as possible.  Sync with <@U06LABY2Y64> after datasets gathered.  Reach out to <@U06K8F0F1RC> about datasets existing.",,U06KJLR4GBF,2025-07-02T03:32:52.000Z,1753765299
+Rec093N9VVB0A,Horikita / Hibari,U073Y77J5TN,2025-07-07,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[studio hibari],true,U07F13STQDA,2025-06-30T10:09:03.000Z,1752556260
+Rec093N8YMECC,Gajumaru / Imagica,U07584FHQMN,2025-07-09,Opt38B8RWRR,Complete,,Opt4GBWBKZB,P1,,[imagica],true,U07F13STQDA,2025-06-30T06:00:04.000Z,1752555811
+Rec093M4XSKB4,Yatsude / Imagica,U07584FHQMN,2025-07-09,Opt38B8RWRR,Complete,,Opt4GBWBKZB,P1,,[imagica],true,U07F13STQDA,2025-06-30T05:59:56.000Z,1752555798
+Rec093K8614F7,Yucca / Imagica,U06L088EW7K,2025-07-09,Opt38B8RWRR,Complete,,Opt4GBWBKZB,P1,,[imagica],true,U07F13STQDA,2025-06-30T05:59:45.000Z,1752555735
+Rec093M4VJ290,Katsuhara Chise / Imagica,U07584FHQMN,2025-07-08,Opt38B8RWRR,Complete,,Opt4GBWBKZB,P1,,[imagica],true,U07F13STQDA,2025-06-30T05:59:25.000Z,1752555787
+Rec093E6JTF99,Shirayuki Ayumu / Imagica,U06L088EW7K,2025-07-10,Opt38B8RWRR,Complete,,Opt4GBWBKZB,P1,,[imagica],true,U07F13STQDA,2025-06-30T05:59:11.000Z,1752555772
+Rec093K825DS9,Enaga Akane / Imagica,U07584FHQMN,2025-07-09,Opt38B8RWRR,Complete,,Opt4GBWBKZB,P1,,[imagica],true,U07F13STQDA,2025-06-30T05:58:38.000Z,1752555752
+Rec093FQJBBD4,Rento / B.Bird,U073Y77J5TN,2025-07-04,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[b.bird inc],true,U07F13STQDA,2025-06-30T05:58:38.000Z,1752461295
+Rec093E6G6NJX,Rinka / B.Bird,U073Y77J5TN,2025-07-04,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[b.bird inc],true,U07F13STQDA,2025-06-30T05:58:26.000Z,1752461269
+Rec09494F3RUG,MP / B.Bird,U073Y77J5TN,2025-07-04,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,[b.bird inc],true,U07F13STQDA,2025-06-30T05:58:12.000Z,1752461284
+Rec0936VA8HV5,Hexademon / Tokegon,U073Y77J5TN,2025-07-11,Opt38B8RWRR,Complete,,OptGESIX7LE,P2,,[tokegon] character training,true,U07F13STQDA,2025-06-30T05:51:54.000Z,1752556223
+Rec0935UHFL68,Minato Mix and Match Train,U06K8F0F1RC,2025-08-06,Opt38B8RWRR,Complete,,Opt4GBWBKZB,P1,,[iKHOR],,U06KJLR4GBF,2025-06-26T06:18:28.000Z,1754367000
+Rec09350JCFCJ,Trainer V2,U06K8F0F1RC,2025-07-08,Opt38B8RWRR,Complete,,Opt0183CXDH,P0,,like trainer v1 but better,true,U06KJLR4GBF,2025-06-26T05:57:35.000Z,1752556281

@@ -45,7 +45,7 @@ export function createResearchEventsRouter({ slack, helpMessage }) {
 
   const STATUS_OPTIONS = {
     "Opt2AUH34OG": "ToDo",
-    "Opt62NHHN5C": "ToDo",
+    "Opt62NHHN5C": "In Review",  // Fixed: was incorrectly mapped to ToDo
     "OptHSJVP60E": "In Progress",
     "OptHX1KN4IP": "Deprecated",
     "OptZHYHCA4A": "Backlog",

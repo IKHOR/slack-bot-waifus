@@ -108,32 +108,87 @@ export function createResearchEventsRouter({ slack, helpMessage }) {
   }
 
   function filterRelevant(items) {
-    return items.filter((it) => it.status === "ToDo" || it.status === "In Progress");
+    // Include ToDo, In Progress, and In Review items for better context
+    return items.filter((it) => 
+      it.status === "ToDo" || 
+      it.status === "In Progress" || 
+      it.status === "In Review"
+    );
   }
 
   function buildTasksContext(items, tz, maxItems = 80) {
-    const sorted = [...items].sort((a, b) => (PRIORITY_ORDER[a.priority] ?? 99) - (PRIORITY_ORDER[b.priority] ?? 99));
-    const trimmed = sorted.slice(0, maxItems);
-    const lines = trimmed.map((it) => {
-      const assignee = getUserName(it.assigneeId);
-      const dueText = it.due ? dayjs(it.due).tz(tz).format("YYYY-MM-DD") : "no due date";
-      const pri = it.priority && it.priority !== "None" ? `[${it.priority}] ` : "";
-      
-      // Format notes/description better
-      let notes = "";
-      if (it.notes) {
-        // Clean up whitespace and newlines
-        const cleanNotes = it.notes.replace(/\s+/g, ' ').trim();
-        if (cleanNotes.length > 200) {
-          notes = `\n   Details: ${cleanNotes.slice(0, 200)}...`;
-        } else if (cleanNotes) {
-          notes = `\n   Details: ${cleanNotes}`;
-        }
+    // Group items by status for better organization
+    const byStatus = {
+      "ToDo": [],
+      "In Progress": [],
+      "In Review": []
+    };
+    
+    items.forEach(item => {
+      if (byStatus[item.status]) {
+        byStatus[item.status].push(item);
       }
-      
-      return `- ${pri}${assignee} • ${it.title} (Due: ${dueText})${notes}`;
     });
-    return lines.join("\n");
+    
+    // Sort each group by priority
+    Object.keys(byStatus).forEach(status => {
+      byStatus[status].sort((a, b) => 
+        (PRIORITY_ORDER[a.priority] ?? 99) - (PRIORITY_ORDER[b.priority] ?? 99)
+      );
+    });
+    
+    const sections = [];
+    
+    // Add ToDo items
+    if (byStatus["ToDo"].length > 0) {
+      sections.push("📝 ToDo Tasks:");
+      byStatus["ToDo"].slice(0, 30).forEach(it => {
+        sections.push(formatTaskLine(it, tz));
+      });
+    }
+    
+    // Add In Progress items
+    if (byStatus["In Progress"].length > 0) {
+      if (sections.length > 0) sections.push("");
+      sections.push("🚀 In Progress:");
+      byStatus["In Progress"].slice(0, 20).forEach(it => {
+        sections.push(formatTaskLine(it, tz));
+      });
+    }
+    
+    // Add In Review items
+    if (byStatus["In Review"].length > 0) {
+      if (sections.length > 0) sections.push("");
+      sections.push("👀 In Review:");
+      byStatus["In Review"].slice(0, 20).forEach(it => {
+        sections.push(formatTaskLine(it, tz));
+      });
+    }
+    
+    return sections.join("\n");
+  }
+  
+  function formatTaskLine(item, tz) {
+    const assignee = getUserName(item.assigneeId);
+    const dueText = item.due ? dayjs(item.due).tz(tz).format("YYYY-MM-DD") : "no due date";
+    const pri = item.priority && item.priority !== "None" ? `[${item.priority}]` : "";
+    
+    // Format notes/description
+    let notes = "";
+    if (item.notes) {
+      const cleanNotes = item.notes.replace(/\s+/g, ' ').trim();
+      if (cleanNotes.length > 150) {
+        notes = ` — ${cleanNotes.slice(0, 150)}...`;
+      } else if (cleanNotes) {
+        notes = ` — ${cleanNotes}`;
+      }
+    }
+    
+    // Mark overdue items
+    const isOverdue = item.due && dayjs(item.due).tz(tz).isBefore(dayjs().tz(tz), 'day');
+    const overdueMarker = isOverdue ? "⚠️ " : "";
+    
+    return `- ${overdueMarker}${pri} ${assignee} • ${item.title} (${dueText})${notes}`;
   }
 
   router.post("/events", async (req, res) => {
@@ -163,7 +218,7 @@ export function createResearchEventsRouter({ slack, helpMessage }) {
           return;
         }
 
-        // Build task context (ToDo/In Progress)
+        // Build comprehensive task context
         let tasksContext = "";
         try {
           const rawItems = await fetchListItems(slack, listId);
@@ -174,11 +229,16 @@ export function createResearchEventsRouter({ slack, helpMessage }) {
           }
         } catch (_) {}
 
+        // Get user information
+        const userId = event.user;
+        const userName = USER_NAMES[userId] || `<@${userId}>`;
+        
         // LLM reply
         const threadContext = await loadThreadSnippet(event.channel, thread_ts);
         let system = systemPrompt;
+        system += `\n\nYou are responding to ${userName} who mentioned you in Slack.`;
         if (tasksContext) {
-          system += `\n\nCurrent tasks (ToDo/In Progress):\n${tasksContext}`;
+          system += `\n\nCurrent R&D task status (organized by stage):\n${tasksContext}`;
         }
         if (threadContext) {
           system += `\n\nThread context (summarized, may be incomplete):\n${threadContext}`;
